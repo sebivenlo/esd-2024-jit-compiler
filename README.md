@@ -11,3 +11,8 @@ That includes:
 - Presentation (if applicable)
 - References.
 - Docker (compose) file (if applicable)
+
+
+References:
+-  Just In Time (JIT) Compilers - Computerphile  https://www.youtube.com/watch?v=d7KHAVaX_Rs
+- Brandt Bucher – A JIT Compiler for CPython https://www.youtube.com/watch?v=HxSHIpEQRjs&t=1504s
