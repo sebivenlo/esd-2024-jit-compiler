@@ -26,3 +26,8 @@ Questions:
 - What is the advantage of JIT Compiler?
 - What is the disadvantage of JIT Compiler?
 - 
+
+Todo:
+- Reproduce the tutorial from Computerphile
+- Inclusive creating an Docker image for this.
+- PHP Version 8.0 compare with lower version (without JIT)
