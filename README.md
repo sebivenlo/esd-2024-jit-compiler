@@ -25,7 +25,7 @@ Questions:
  - Answer: JAVA and C#
 - What is the advantage of JIT Compiler?
 - What is the disadvantage of JIT Compiler?
-- 
+- Visualise Languages: Rust, Typescript, Javascript, Python, C, Java (Venn Diagram)
 
 Todo:
 - Reproduce the tutorial from Computerphile
