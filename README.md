@@ -16,3 +16,11 @@ That includes:
 References:
 -  Just In Time (JIT) Compilers - Computerphile  https://www.youtube.com/watch?v=d7KHAVaX_Rs
 - Brandt Bucher – A JIT Compiler for CPython https://www.youtube.com/watch?v=HxSHIpEQRjs&t=1504s
+
+Questions:
+- Which type of languages can have JIT Compiler?
+- Which languages do have JIT Compiler?
+ - Answer: JAVA and C#
+- What is the advantage of JIT Compiler?
+- What is the disadvantage of JIT Compiler?
+- 
