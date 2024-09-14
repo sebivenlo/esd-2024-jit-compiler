@@ -1,0 +1,3 @@
+why does it start slow? warming up
+
+Show a difference between a function which takes any type of object(string and/or interger)
