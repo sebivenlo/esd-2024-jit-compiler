@@ -2,6 +2,10 @@
 
 This part contains the instructions on how to install a docker image which has a php 8.0 version with a JIT compiler, the JIT compiler can also be disable which allow us to test the performance between the PHP runner with and without JIT compiler. For this tests the Docker program is needed in order to use the images of the PHP with JIT
 
+@todo: use docker run --mount command instead of -v command
+--mount type=bind,source="/",destination=/app
+Because: New users should use the --mount syntax. Experienced users may be more familiar with the -v or --volume syntax, but are encouraged to use --mount, because research has shown it to be easier to use.
+Source: https://docs.docker.com/engine/storage/bind-mounts/
 
 ## Installation
 
