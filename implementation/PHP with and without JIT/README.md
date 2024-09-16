@@ -2,10 +2,6 @@
 
 This part contains the instructions on how to install a docker image which has a php 8.0 version with a JIT compiler, the JIT compiler can also be disable which allow us to test the performance between the PHP runner with and without JIT compiler. For this tests the Docker program is needed in order to use the images of the PHP with JIT
 
-@todo: use docker run --mount command instead of -v command
---mount type=bind,source="/",destination=/app
-Because: New users should use the --mount syntax. Experienced users may be more familiar with the -v or --volume syntax, but are encouraged to use --mount, because research has shown it to be easier to use.
-Source: https://docs.docker.com/engine/storage/bind-mounts/
 
 ## Installation
 
@@ -30,12 +26,12 @@ echo sprintf("Fibonacci(%s): %s\nTime: %s", $n, $fibonacci, $stop-$start);
 
 3- Copy the path where the script.php is located and put it in the following command which will run the file WITHOUT USING JIT
 ```bash
-docker run -it -v "[Here goes your path where the PHP file is located]":/app -w /app akondas/php:8.0-cli-alpine php script.php
+docker run -it --mount type=bind,source="[Here goes your path where the PHP file is located]",destination=/app -w /app akondas/php:8.0-cli-alpine php script.php
 ```
 
 4- to see the improvement of the JIT compiler you can use the following command which enables the JIT, you should see in the echo of the php file that it prints a faster output
 ```bash
-docker run -it -v "[Here goes your path where the PHP file is located]":/usr/src/app -w /usr/src/app akondas/php:8.0-cli-alpine php -dzend_extension=opcache.so -dopcache.enable_cli=1 -dopcache.jit_buffer_size=500000000 -dopcache.jit=1235 script.php
+docker run -it --mount type=bind,source="[Here goes your path where the PHP file is located]",destination=/usr/src/app -w /usr/src/app akondas/php:8.0-cli-alpine php -dzend_extension=opcache.so -dopcache.enable_cli=1 -dopcache.jit_buffer_size=500000000 -dopcache.jit=1235 script.php
 ```
 
 ## references
