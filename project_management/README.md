@@ -13,6 +13,12 @@ For this course we are going to use a variation of Agile which only covers the s
 
 We are going to use a project board which consists on 3 blocks(Backlog, In progress and Done) to keep in track all our process and to see on which tasks we are currently working on.
 
+## Assesment scheduler
+
+This is the schedule of all students workshop, the duration is of 90 minutes where the students should present their research work and give the audience a few code examples where they also can test the work of the students. 
+
+![Alt text](images/workshop_presentation_schedule.png)
+
 ## Planning for the workshop and research
 
 ### JIT Compiler Workshop

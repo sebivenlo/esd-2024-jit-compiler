@@ -34,6 +34,8 @@ docker run -it -v "[Here goes your path where the PHP file is located]":/app -w 
 docker run -it -v "[Here goes your path where the PHP file is located]":/usr/src/app -w /usr/src/app akondas/php:8.0-cli-alpine php -dzend_extension=opcache.so -dopcache.enable_cli=1 -dopcache.jit_buffer_size=500000000 -dopcache.jit=1235 script.php
 ```
 
+## references
 
+- example of a docker container with jit: https://github.com/Eyevinn/docker-jit-capture
 
-
+- example of difference in PHP using JIT: https://arkadiuszkondas.com/how-to-run-php-8-with-jit-support-using-docker/
