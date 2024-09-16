@@ -1,9 +1,14 @@
 
-Go back - [root](./)
+Go back - [root](../)
 
 # Project Management
 
 This part will containt all the work informations such as methodologies, delivares, deadlines, etc.
+
+## Module description
+
+The module description can be found in this link: [module description](./images/md_esd.pdf). The module description contains all needed information of this module.
+
 
 ## Agile methodology
 

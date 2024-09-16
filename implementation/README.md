@@ -1,2 +1,2 @@
 
-Go back - [root](./)
+Go back - [root](../)
