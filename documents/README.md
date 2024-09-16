@@ -1,5 +1,5 @@
 
-Go back - [root](#)
+Go back - [root](./)
 
 # Frequently Asked Questions (FAQ)
 

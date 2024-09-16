@@ -38,9 +38,9 @@ This repository is part of the ESD (Enterprise Software Development) module, whe
 
 ## Table of Contents
 
-- [documents](#documents)
-- [implementation](#implementation)
-- [project_management](#project_management)
+- [documents](./documents)
+- [implementation](./implementation)
+- [project_management](./roject_management)
 
 ### Team members 
 
