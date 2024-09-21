@@ -99,7 +99,7 @@ This is the schedule of all students workshop, the duration is of 90 minutes whe
 
 ##### What is a JIT Compiler?
 
-Just-in-time compilation is a method for improving the performance of interpreted programs. During execution the program may be compiled into native code to improve its performance. It is also known as dynamic compilation.
+Just-in-time compilation is a method for improving the performance of interpreted programs. During execution the program may be compiled into native code to improve its performance. It is also known as dynamic compilation. The earliest published JIT compiler is generally attributed to work on LISP by John McCarthy in 1960.
 
 Traditionally there are two methods for converting source code into a form that can be run on a platform. Static compilation converts the code into a language for a specific platform. An interpreter directly executes the source code. To get more into details about how JIT compiler works we have to know the two normal coverters of source code(compiler and interpreter)
 
@@ -112,7 +112,24 @@ Compiler: A compiler that supports the source programming language reads the fil
 
 Interpreter: An interpreter is a computer program that is used to directly execute program instructions written using one of the many high-level programming languages.
 
-The interpreter transforms the high-level program into an intermediate language that it then executes, or it could parse the high-level source code and then performs the commands directly, which is done line by line or statement by statement.
+The interpreter transforms the high-level program into an intermediate language that it then executes, or it could parse the high-level source code and then performs the commands directly, which is done line by line or statement by statement. There are 4 types of interpreters
+
+
+Bytecode Interpreter: Bytecode interpreters can process up to 256 instructions, with each instruction starting with a byte. 
+
+![Alt text](/documents/images/bytes.png)
+
+![Alt text](/documents/images/bytecode_pointer_interpreters.png)
+
+Threaded Code Interpreter: Unlike bytecode interpreters, threaded code interpreters use pointers instead of bytes. Each instruction is a word pointing to a function or an instruction sequence, possibly followed by a parameter. The number of different instructions is limited by the available memory and address space.
+
+![Alt text](/documents/images/bytecode_pointer_interpreters.png)
+
+Abstract Syntax Tree Interpreter: AST is an approach to transform the source code into an optimized abstract syntax tree, then execute the program following this tree structure, or use it to generate native code just-in-time.
+
+![Alt text](/documents/images/three_interpreter.png)
+
+Just-in-Time Compilation: The jit compiler can be interpreted as both, in the following chapter 2, you can find the rest of the information.
 
 ![Alt text](/documents/images/interpreter_process.png)
 
@@ -139,9 +156,13 @@ Now going back to what JIT compiler is. JIT compilation attempts to use the bene
 
 JIT compiler explanation: https://www.freecodecamp.org/news/just-in-time-compilation-explained/
 
+JIT compiler founder: https://en.wikipedia.org/wiki/Just-in-time_compilation#:~:text=10%20External%20links-,History,by%20John%20McCarthy%20in%201960.
+
 What is a compiler: https://www.techtarget.com/whatis/definition/compiler#:~:text=A%20compiler%20that%20supports%20the,operating%20systems%20and%20computer%20architectures.
 
 What is an interpreter: https://www.techopedia.com/definition/7793/interpreter
+
+types of interpreters: https://builtin.com/software-engineering-perspectives/compiler-vs-interpreter
 
 ##### Difference between JIT and AOT Compilation:
 
@@ -156,7 +177,7 @@ What is an interpreter: https://www.techopedia.com/definition/7793/interpreter
 
 ---
 
-#### 2. what is JIT compiler and How a it Works (10-15 mins)
+#### 2. How JIT compiler Works? (10-15 mins)
 
 ##### Phases of JIT Compilation:
 
@@ -174,6 +195,12 @@ What is an interpreter: https://www.techopedia.com/definition/7793/interpreter
 
 - **Initial delay (warm-up time)** while the JIT compiles code.
 - **Memory overhead** due to storing both bytecode and machine code.
+
+###### references
+
+Good explanation: https://domiyanyue.medium.com/what-is-just-in-time-compilation-why-is-it-important-7d9df9ec25de
+
+Another good explanation: https://medium.com/@sakshee_agrawal/understanding-just-in-time-jit-compilation-in-java-ae2a6b9fa931
 
 [Go back to top](#table-of-contents)
 
@@ -247,17 +274,22 @@ What is an interpreter: https://www.techopedia.com/definition/7793/interpreter
 
 #### 6. Real-World Use Cases of JIT (5-10 mins)
 
-##### JVM for Java Applications:
+Web Browsers (JavaScript Engines)
 
-- Explain how JIT helps Java run efficiently across different platforms.
+Use Case: JavaScript engines (e.g., Google V8, Mozilla SpiderMonkey) in modern web browsers use JIT compilation to improve the execution speed of JavaScript code in web applications.
+Benefit: It enhances performance by compiling frequently used functions to machine code during runtime, rather than interpreting JavaScript line-by-line.
 
-##### Game Engines (Unity/C#):
+2. Java Virtual Machine (JVM)
+Use Case: The JVM uses JIT compilation for running Java applications. Initially, Java code is compiled to bytecode, which is platform-independent. At runtime, the JIT compiler translates bytecode to machine code for the host system.
+Benefit: Improves performance by dynamically optimizing code execution based on runtime behavior, making Java programs run faster after the initial warm-up period.
 
-- Real-time rendering and execution often benefit from JIT optimizations.
+3. .NET Framework (Common Language Runtime - CLR)
+Use Case: The CLR for languages like C# and VB.NET uses JIT compilation to convert Microsoft Intermediate Language (MSIL) to native machine code during execution.
+Benefit: Ensures that the code is compiled for the specific hardware at runtime, allowing for better platform compatibility and optimization.
 
-##### Dynamic Languages (JavaScript, Python):
-
-- JIT allows dynamic languages to compete with statically-typed languages in terms of performance.
+4. Python (PyPy)
+Use Case: PyPy, an alternative implementation of Python, uses a JIT compiler to accelerate the execution of Python programs by compiling frequently used sections of the code.
+Benefit: Enhances performance for Python, which is traditionally an interpreted language, making it suitable for computationally intensive tasks.
 
 [Go back to top](#table-of-contents)
 
