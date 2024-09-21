@@ -295,12 +295,18 @@ Benefit: Enhances performance for Python, which is traditionally an interpreted 
 
 ---
 
-#### 7. Interactive Demos (15-20 mins)
+#### 7. QUIZ (10 mins)
+
+make quiz about the interpreter, compiler and jit compiler
+
+also make compiler of some use cases we mentioned earler
+
+
+
+#### 8. Interactive Demos (10-20 mins)
 
 ##### Live Coding:
 
 - Show examples of running code with JIT optimizations in a language like Java or Python (PyPy).
 
-##### Hotspot Example:
 
-- Write a small
