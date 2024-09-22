@@ -1,6 +1,14 @@
 
 Status: just a suggestion
 # Agenda Workshop (90 min)
+1. Audience knowledge (25 min)
+2. Presentation (10 min)
+3. Break (15 min)
+4. Hands-on (30 min)
+5. Group discussion (10 min)
+
+------
+
 ### Audience knowledge (25 minute)
 Process: no laptops/phones. Facilitator only asks questions, and does not give answers. Facilitator write input from audience on whiteboard.
 
