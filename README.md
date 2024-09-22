@@ -71,4 +71,6 @@ Balance of Flexibility and Speed: While interpreted code is easy to work with, c
 Real-world Usage: Technologies like the Java Virtual Machine (JVM), JavaScript engines (like V8), and .NET's Common Language Runtime (CLR) all utilize JIT compilation, making it a crucial component of modern software systems.
 By diving into the inner workings of JIT compilers, we aim to gain a deeper understanding of how runtime compilation works and explore its applications in various programming languages and frameworks.
 
+## Audience
 
+Our audience are 4th year Informatics students. They learned Java in PRC1/PRC2/ALDA. Learned C programming in OSCO. And in projects learned about Javascript/TypeScript. In Data Science, and maybe internship/minor learned about Python. In PRC1 or PRC2, they learned about the Java Architecture, like the JVM.
