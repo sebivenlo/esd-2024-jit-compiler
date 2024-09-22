@@ -74,3 +74,6 @@ By diving into the inner workings of JIT compilers, we aim to gain a deeper unde
 ## Audience
 
 Our audience are 4th year Informatics students. They learned Java in PRC1/PRC2/ALDA. Learned C programming in OSCO. And in projects learned about Javascript/TypeScript. In Data Science, and maybe internship/minor learned about Python. In PRC1 or PRC2, they learned about the Java Architecture, like the JVM.
+
+## Workshop
+Training workshops are designed to teach new skills or knowledge to attendees. The goal of a training workshop is to provide attendees with the knowledge and skills they need to perform a specific task or function. Activities in a training workshop might include lectures, demonstrations, hands-on practice, and group discussions. Source: https://makeiterate.com/how-to-plan-a-workshop-a-quick-and-easy-guide/
