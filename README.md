@@ -36,6 +36,16 @@ Todo:
 
 This repository is part of the ESD (Enterprise Software Development) module, where students investigate various architectural aspects, technologies, frameworks, or business technologies with architectural implications. The aim is to analyze and present these topics—highlighting both their strengths and weaknesses—in a workshop setting attended by the rest of the class.
 
+> In this module the students investigate [...] an [topic] with architectural implications, for good or bad, and present their findings and learnings in a workshop [...].
+> - LG 1 - investigate aspects of [topic].
+> - LG 2 - prepare and execute a workshop to introduce the technology to peers (flip the classroom with preparation of exercises).
+> - LG 3 - [...]
+>
+> The grading will be done based on the Presentation/Workshop, research, and material the students provide to the other students and lecturers.
+
+Source: Module Description
+
+
 ## Table of Contents
 
 - [documents](./documents)
