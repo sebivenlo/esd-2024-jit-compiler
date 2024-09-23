@@ -11,10 +11,3 @@ Show a difference between a function which takes any type of object(string and/o
 Use JIT in the ALDA projects we did(appoinment planner, sorter, etc)
 
 
-
-## Docker
-
-### OpenJDK
-Docker was immediately shutting down when running/starting it. The following command made it possible to keep the container up (it works on MacOS/Linux).
-
-    docker run -it --name java_dev_machine --mount type=bind,source="$(pwd)",target=/usr/src/app eclipse-temurin bash
