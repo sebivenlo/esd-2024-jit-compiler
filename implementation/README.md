@@ -15,6 +15,6 @@ Use JIT in the ALDA projects we did(appoinment planner, sorter, etc)
 ## Docker
 
 ### OpenJDK
-Docker was immediately shutting down when running/starting it. The following command made it possible to keep the container up.
+Docker was immediately shutting down when running/starting it. The following command made it possible to keep the container up (it works on MacOS/Linux).
 
-    docker run -it --name java_dev -v $(pwd):/usr/src/app -w /usr/src/app eclipse-temurin bash
+    docker run -it --name java_dev_machine --mount type=bind,source="$(pwd)",target=/usr/src/app eclipse-temurin bash
