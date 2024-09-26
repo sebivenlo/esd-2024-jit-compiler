@@ -202,6 +202,8 @@ Good explanation: https://domiyanyue.medium.com/what-is-just-in-time-compilation
 
 Another good explanation: https://medium.com/@sakshee_agrawal/understanding-just-in-time-jit-compilation-in-java-ae2a6b9fa931
 
+article about single and multilevel jit: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://dl.acm.org/doi/pdf/10.1145/2541228.2541229
+
 [Go back to top](#table-of-contents)
 
 ---

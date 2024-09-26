@@ -2,9 +2,9 @@
 Status: just a suggestion
 # Agenda Workshop (90 min)
 1. Audience knowledge (25 min)
-2. Presentation (10 min)
+2. Presentation (15 min)
 3. Break (15 min)
-4. Hands-on (30 min)
+4. Hands-on (25 min)
 5. Group discussion (10 min)
 
 ------
@@ -23,11 +23,27 @@ Process: no laptops/phones. Facilitator only asks questions, and does not give a
 - What does 'just' in JIT mean? 
 - For what languages a JIT compiler would be interested?
 - Why there exist interpreted languages?
+- Maybe a small quizz with multiple choice?
 
-### Presentation (10 minutes)
+### Presentation (15 minutes)
+- What is a compiler/interpreter?
+- How does a compiler/interpreter work?
+- What is JIT compiler?
+- What are the pros and cons of using jit compiler?
+- What are use cases for JIT compiler?
+- Future for JIT compiler?
+- Questions (4 minutes)
 
 ### Break (15 minutes)
 
-### Hands-on (30 minutes)
+### Hands-on (25 minutes)
+help students when they encountered an error
+- PHP -  10 minutes
+- JAVA example 10 minutes
+- sorting example 10 minutes
 
 ### Group discussion (10 minutes)
+
+- Quizz - incognito, questions about difference of compilers. Questions about the interpreter and compiler 10 minutes
+
+
