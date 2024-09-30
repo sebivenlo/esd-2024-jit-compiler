@@ -10,20 +10,27 @@ Status: just a suggestion
 ------
 
 ### Audience knowledge (25 minute)
-Process: no laptops/phones. Facilitator only asks questions, and does not give answers. Facilitator write input from audience on whiteboard.
+#### Rules: 
+- no laptops/phones. 
+- Facilitator only asks questions(no more than 4 minutes otherwise after the workshop), and does not give answers. 
+- Facilitator write input from audience on whiteboard. 
+
 
 - What is a compiler?
   - Does Java has a compiler? How does that work? Ask audience what they remember from PCR1/PCR2.
   - What is inlining?
+  - what is the interpreter?
+  - what is the difference between those two?
 - Landscape languages
   - Does Python has a compiler? How does that work?
-  - Does C has a compiler?
+  - Does C has a compiler? think about the OSCO module.
 - Do all languages have a compiler?
+
 - What is a JIT compiler?
 - What does 'just' in JIT mean? 
 - For what languages a JIT compiler would be interested?
 - Why there exist interpreted languages?
-- Maybe a small quizz with multiple choice?
+- Why is the warming up happening
 
 ### Presentation (15 minutes)
 - What is a compiler/interpreter?
@@ -39,11 +46,16 @@ Process: no laptops/phones. Facilitator only asks questions, and does not give a
 ### Hands-on (25 minutes)
 help students when they encountered an error
 - PHP -  10 minutes
-- JAVA example 10 minutes
-- sorting example 10 minutes
+- C exercise 
+- JAVA example 10 minutes -???
+- sorting example 10 minutes -???
+- Our own compiler 
+
 
 ### Group discussion (10 minutes)
 
 - Quizz - incognito, questions about difference of compilers. Questions about the interpreter and compiler 10 minutes
+
+- QUIzz: compiler, interpreter, JIT, use cases: evaluation of student's knowledge 
 
 
