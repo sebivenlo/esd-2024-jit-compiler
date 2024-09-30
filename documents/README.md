@@ -194,6 +194,16 @@ types of interpreters: https://builtin.com/software-engineering-perspectives/com
 ##### Challenges:
 
 - **Initial delay (warm-up time)** while the JIT compiles code.
+Warm-up is the time taken for the Java application to reach the optimum compiled code performance. It is the task of the Just-in-Time (JIT) compiler to deliver optimal performance by producing optimized compiled code from application bytecode.
+
+When people think of Java compilers, they usually think about javac, which turns your Java source code into Java bytecode. But equally important is JIT compilation, which turns your Java bytecode into optimized machine code for the specific hardware on which your Java program is running.
+
+When you first start your Java program, the JVM takes the platform-independent bytecode and runs it in the interpreter, which takes more CPU resources and is slower to execute. After a certain number of invocations (default 1K), the method is promoted to a profiling tier, known as the Tier 1 compiler or C1. Here the JVM monitors the method to build a profile of how many times each method is called, with which code paths, and how they are executed in the profiled method. After the compile threshold is reached (default 10K), the JVM promotes the method to the Tier 2 compiler by putting it in the Tier 2 compile queue. The Tier 2 compiler uses the Tier 1 profile to compile methods into highly optimized machine code. See image below.
+
+![Alt text](/documents/images/warming_up_jvm.png)
+
+
+
 - **Memory overhead** due to storing both bytecode and machine code.
 
 ###### references
@@ -203,6 +213,8 @@ Good explanation: https://domiyanyue.medium.com/what-is-just-in-time-compilation
 Another good explanation: https://medium.com/@sakshee_agrawal/understanding-just-in-time-jit-compilation-in-java-ae2a6b9fa931
 
 article about single and multilevel jit: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://dl.acm.org/doi/pdf/10.1145/2541228.2541229
+
+warming up issue: https://docs.azul.com/prime/analyzing-tuning-warmup
 
 [Go back to top](#table-of-contents)
 
@@ -276,6 +288,12 @@ article about single and multilevel jit: chrome-extension://efaidnbmnnnibpcajpcg
 
 #### 6. Real-World Use Cases of JIT (5-10 mins)
 
+When thinking about what the use cases for the JIT compiler are, we have to understand the code of the software. JIT compilation is particularly beneficial in scenarios where code needs to be executed repeatedly or where runtime optimization is crucial. Some common use cases include
+
+1. Virtual Machines: Many popular programming languages, such as Java, .NET, and Python, rely on JIT compilation to execute their programs efficiently. The JIT compiler in these virtual machines translates the bytecode into machine code, providing performance benefits without sacrificing portability.
+2. Dynamic Languages: JIT compilation is especially advantageous for dynamic languages like JavaScript and Ruby. These languages often execute code that is generated or modified at runtime, and a JIT compiler can optimize this code based on the actual runtime behavior.
+3. Gaming and Graphics: JIT compilation is widely used in gaming and graphics programming. It allows for real-time optimization of complex algorithms, such as rendering or physics simulations, to achieve smooth and responsive gameplay.
+
 Web Browsers (JavaScript Engines)
 
 Use Case: JavaScript engines (e.g., Google V8, Mozilla SpiderMonkey) in modern web browsers use JIT compilation to improve the execution speed of JavaScript code in web applications.
@@ -285,13 +303,33 @@ Benefit: It enhances performance by compiling frequently used functions to machi
 Use Case: The JVM uses JIT compilation for running Java applications. Initially, Java code is compiled to bytecode, which is platform-independent. At runtime, the JIT compiler translates bytecode to machine code for the host system.
 Benefit: Improves performance by dynamically optimizing code execution based on runtime behavior, making Java programs run faster after the initial warm-up period.
 
+As mentioned before, the JIT compiler compiles bytecode to machine code “just-in-time” for it to run. By default, the JIT compiler is enabled and is activated on the calling of a Java method. It can be disabled to check and diagnose Java compilation problems. For other reasons, it is not recommended as it may slow down your code by running it in interpreter-only mode. The JIT compiler helps optimise and maximise the performance of complex Java programs without consuming processor time and memory space. It also keeps track of operational data during runtime, which can be used to improve future recompilations.
+
 3. .NET Framework (Common Language Runtime - CLR)
-Use Case: The CLR for languages like C# and VB.NET uses JIT compilation to convert Microsoft Intermediate Language (MSIL) to native machine code during execution.
+Use Case: The CLR for languages like C# and VB.NET uses JIT compilation to convert Microsoft Intermediate Language (MSIL) to native machine code during execution. To see the flow diagram below
 Benefit: Ensures that the code is compiled for the specific hardware at runtime, allowing for better platform compatibility and optimization.
 
+![Alt text](/documents/images/clr_runtime_flow.jpg)
+
 4. Python (PyPy)
-Use Case: PyPy, an alternative implementation of Python, uses a JIT compiler to accelerate the execution of Python programs by compiling frequently used sections of the code.
+Use Case: PyPy, an alternative implementation of Python, uses a JIT compiler to accelerate the execution of Python programs by compiling frequently used sections of the code. See below an image of the differences between using dependecies with pypy and the cpython
 Benefit: Enhances performance for Python, which is traditionally an interpreted language, making it suitable for computationally intensive tasks.
+
+![Alt text](/documents/images/pypy_vs_cpython.png)
+
+
+In conclusion, a JIT compiler is a critical component of a programming language's runtime environment that dynamically translates and optimizes code just before execution. It offers performance improvements, adaptability, reduced memory footprint, and faster start-up times. JIT compilation finds extensive use in virtual machines, dynamic languages, and gaming and graphics programming.
+
+
+###### references
+
+use cases of jit compiler: https://startup-house.com/glossary/jit-compiler 
+
+JVM using JIT compiler: https://www.naukri.com/code360/library/difference-between-jit-and-jvm
+
+CLR: https://learn.microsoft.com/en-us/dotnet/standard/clr
+
+pypy vs cpython: https://pypy.org/
 
 [Go back to top](#table-of-contents)
 
