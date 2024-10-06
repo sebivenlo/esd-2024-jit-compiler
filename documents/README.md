@@ -280,7 +280,28 @@ warming up issue: https://docs.azul.com/prime/analyzing-tuning-warmup
 
 - **Initial startup delay** due to JIT compilation.
 - **Memory overhead** for both compiled and interpreted code.
-- **Complexity** in development and debugging.
+- **Complexity** in development and debugging.`
+
+# JIT Compilation vs. AOT Compilation
+
+JIT Compilation (Just-In-Time Compilation) and Ahead-of-Time (AOT) Compilation are two distinct approaches to compiling and executing code in software development. They each have their advantages and drawbacks. Let’s compare JIT Compilation and AOT Compilation in various aspects:
+
+| **Aspect**                        | **JIT Compilation**                                                                 | **Ahead-of-Time (AOT) Compilation**                                                                 |
+|-----------------------------------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Compilation Timing**            | JIT Compilation occurs during runtime, just before code execution.                  | AOT Compilation happens before runtime, typically during the build process.                          |
+| **Execution Speed**               | Initially slower due to compilation overhead. Improves as code is cached and optimized. | Generally faster at startup since code is already compiled.                                          |
+| **Resource Usage**                | Requires memory and CPU resources during compilation.                               | Lower memory and CPU usage during execution, as no JIT compilation occurs.                           |
+| **Portability**                   | Platform-independent bytecode is used, allowing for cross-platform compatibility.   | Platform-specific binaries are generated, which may limit portability.                               |
+| **Start-Up Time**                 | Longer start-up times as compilation occurs at runtime.                             | Faster start-up times as code is precompiled.                                                        |
+| **Adaptability to Runtime Changes**| Can adapt to runtime conditions by recompiling and optimizing code as needed.       | Requires recompilation and redeployment for code changes.                                            |
+| **Development Workflow**          | Well-suited for development and debugging, as code changes are reflected immediately. | More suitable for deployment and distribution, as code is compiled and stable.                       |
+| **Example Languages**             | Java, C#, JavaScript (in some cases)                                                | C, C++, Rust, Go, Swift, and many compiled languages.                                                |
+| **Distribution**                  | Often used in interpreted or semi-compiled languages like Java and JavaScript.      | Commonly used in compiled languages for native or system-level applications.                         |
+
+
+references: 
+
+advantages and disadvantages: https://www.javacodegeeks.com/2023/09/just-in-time-jit-compilation-benefits-drawbacks-and-the-evolving-landscape.html 
 
 [Go back to top](#table-of-contents)
 
@@ -320,6 +341,13 @@ Benefit: Enhances performance for Python, which is traditionally an interpreted 
 
 In conclusion, a JIT compiler is a critical component of a programming language's runtime environment that dynamically translates and optimizes code just before execution. It offers performance improvements, adaptability, reduced memory footprint, and faster start-up times. JIT compilation finds extensive use in virtual machines, dynamic languages, and gaming and graphics programming.
 
+#### what is next for JIT compiler?
+
+Just-In-Time (JIT) Compilation is an evolving field in software development and runtime optimization. As technology advances and programming languages evolve, several future trends in JIT Compilation are emerging.
+
+- Improved Code Performance: Future JIT compilers will continue to introduce advanced optimization techniques, resulting in even faster code execution. These optimizations may include enhanced loop unrolling, better inlining strategies, and smarter dead code elimination.
+
+- Machine Learning-Driven Optimizations: Machine learning and artificial intelligence are increasingly being used to identify performance bottlenecks in code. JIT compilers may leverage these technologies to make data-driven decisions about code optimization.
 
 ###### references
 
@@ -330,6 +358,8 @@ JVM using JIT compiler: https://www.naukri.com/code360/library/difference-betwee
 CLR: https://learn.microsoft.com/en-us/dotnet/standard/clr
 
 pypy vs cpython: https://pypy.org/
+
+future trends of jit: https://www.javacodegeeks.com/2023/09/just-in-time-jit-compilation-benefits-drawbacks-and-the-evolving-landscape.html 
 
 [Go back to top](#table-of-contents)
 
