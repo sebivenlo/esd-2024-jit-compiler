@@ -45,11 +45,11 @@ Status: just a suggestion
 
 ### Hands-on (25 minutes)
 help students when they encountered an error
-- PHP -  10 minutes
-- C exercise 
+- manually compile Java program and view bytecode (to show how compilation work)
+- run Javascript without compilation (to show that language can be implemented as interpretar or compiler) and on NodeJs
+- run Python with CPython and PyPy (to show with or without JIT)
 - JAVA example 10 minutes -???
-- sorting example 10 minutes -???
-- Our own compiler 
+- sorting example (to see performance difference)
 
 
 ### Group discussion (10 minutes)
