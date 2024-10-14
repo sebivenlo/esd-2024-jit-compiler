@@ -2,6 +2,8 @@
 
 In this document, we will explore three different sorting algorithms: Selection Sort, Insertion Sort, and Quick Sort. We'll discuss their complexities and how using a JIT compiler can significantly improve their performance.
 
+The [default JS sort function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) is using Timsort since V8 v7.0. Source: https://v8.dev/blog/array-sort
+
 ## Sorting Algorithms Overview
 
 ### 1. Selection Sort
