@@ -1,37 +1,3 @@
-<!-- # JIT Compiler
-
-In computing, just-in-time (JIT) compilation (also dynamic translation or run-time compilations) is compilation (of computer code) during execution of a program (at run time) rather than before execution.
-
-## Contents
-Please make sure all artifacts are in this GitHub repository.  
-That includes:
-
-- Code
-- Workshop materials
-- Presentation (if applicable)
-- References.
-- Docker (compose) file (if applicable)
-
-
-References:
--  Just In Time (JIT) Compilers - Computerphile  https://www.youtube.com/watch?v=d7KHAVaX_Rs
-- Brandt Bucher – A JIT Compiler for CPython https://www.youtube.com/watch?v=HxSHIpEQRjs&t=1504s
-- Interpreter/Compiler: https://ruslanspivak.com/lsbasi-part1/
-
-Questions:
-- What is a compiler and how is it different from an interpreter?
-- Which type of languages can have JIT Compiler?
-- Which languages do have JIT Compiler?
- - Answer: JAVA and C#
-- What is the advantage of JIT Compiler?
-- What is the disadvantage of JIT Compiler?
-- Visualise Languages: Rust, Typescript, Javascript, Python, C, Java (Venn Diagram)
-
-Todo:
-- Reproduce the tutorial from Computerphile
-- Inclusive creating an Docker image for this.
-- PHP Version 8.0 compare with lower version (without JIT) -->
-
 # Project Workshop ESD 
 
 This repository is part of the ESD (Enterprise Software Development) module, where students investigate various architectural aspects, technologies, frameworks, or business technologies with architectural implications. The aim is to analyze and present these topics—highlighting both their strengths and weaknesses—in a workshop setting attended by the rest of the class.
@@ -66,10 +32,14 @@ We chose to focus on the JIT compiler because of its fascinating ability to comp
 
 JIT compilers are particularly interesting due to:
 
-Dynamic Optimization: JIT compilers can analyze the code while it runs, optimizing frequently executed paths for better performance.
+**Dynamic Optimization**: JIT compilers can analyze the code while it runs, optimizing frequently executed paths for better performance.
 Balance of Flexibility and Speed: While interpreted code is easy to work with, compiled code is faster. JIT blends the two, making it a compelling solution for performance-sensitive applications.
 Real-world Usage: Technologies like the Java Virtual Machine (JVM), JavaScript engines (like V8), and .NET's Common Language Runtime (CLR) all utilize JIT compilation, making it a crucial component of modern software systems.
 By diving into the inner workings of JIT compilers, we aim to gain a deeper understanding of how runtime compilation works and explore its applications in various programming languages and frameworks.
+
+**Software and System Architectures**: A JIT compiler is part of the execution model of programming languages, especially in systems that rely on virtual machines (e.g., JVM for Java, .NET CLR). It's an architectural decision on how to handle code execution—whether to interpret or compile it at runtime for better performance.
+
+**Technologies**: It's a core technology in systems that optimize the execution of code by converting higher-level code into machine code dynamically at runtime, improving performance over interpreted execution models.
 
 ## Audience
 
