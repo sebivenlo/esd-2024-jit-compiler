@@ -4,17 +4,15 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 
 View this in your browser: https://github.com/sebivenlo/esd-2024-jit-compiler
 
-Installed in your container is: Java, JavaScript, Python (CPython, PyPy), Vim and some VScode extensions.
-
 ## Challenges
-- manually compile Java program and view bytecode (to show how compilation work)
-- run Javascript without compilation (to show that language can be implemented as interpretar or compiler) and on NodeJs
-- run Python with CPython and PyPy (to show with or without JIT)
-- JAVA example 10 minutes -???
-- sorting example (to see performance difference)
+1. [manually compile Java program and view bytecode (to show how compilation work)](/implementation/JAVA/README.md)
+2. run Javascript without compilation (to show that language can be implemented as interpretar or compiler) and on NodeJs
+3. run Python with CPython and PyPy (to show with or without JIT)
+4. JAVA example 10 minutes -???
+5. sorting example (to see performance difference)
 
 
-Please ask for help if you encounter a problem
+Please ask Jorge or Thijs for help if you encounter a problem.
 
 
 [More info about this ESD project](introduction.md)
