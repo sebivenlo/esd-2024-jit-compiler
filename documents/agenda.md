@@ -44,13 +44,7 @@ Status: just a suggestion
 ### Break (15 minutes)
 
 ### Hands-on (25 minutes)
-help students when they encountered an error
-- manually compile Java program and view bytecode (to show how compilation work)
-- run Javascript without compilation (to show that language can be implemented as interpretar or compiler) and on NodeJs
-- run Python with CPython and PyPy (to show with or without JIT)
-- JAVA example 10 minutes -???
-- sorting example (to see performance difference)
-
+For content see [README](../README.md)
 
 ### Group discussion (10 minutes)
 
