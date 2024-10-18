@@ -8,7 +8,8 @@
         "extensions": [
           "Gruntfuggly.todo-tree",
           "vscjava.vscode-java-pack",
-          "mnxn.jvm-bytecode-viewer"
+          "mnxn.jvm-bytecode-viewer",
+          "ms-python.python"
         ]
       }
   }
