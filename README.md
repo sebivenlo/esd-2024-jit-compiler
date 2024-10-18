@@ -2,7 +2,7 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 
 # Welcome to the JIT-Compiler Workshop
 
-Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen folder to develop in a container.**
+> Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen folder to develop in a container.**
 
 ## Challenges
 1. [Manually compile Java program and view bytecode (to show how compilation work)](/implementation/JAVA/README.md)
