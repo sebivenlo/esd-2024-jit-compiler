@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int numerator = 10;
-    int denominator = 0; // This will cause a division by zero error
-    int result;
+    float numerator = 10.0;
+    float denominator = 0.0; // This will cause a division by zero error
+    float result;
 
     result = numerator / denominator;
 
-    printf("Result: %d\n", result);
+    printf("Result: %f\n", result);
 
     return 0;
 }
