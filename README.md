@@ -1,6 +1,6 @@
 # Welcome to the JIT-Compiler Workshop
 
-Click pop-up: Folder contains a Dev Container configuration file. **Reopen folder to develop in a container.**
+Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen folder to develop in a container.**
 
 View this in your browser: https://github.com/sebivenlo/esd-2024-jit-compiler
 
