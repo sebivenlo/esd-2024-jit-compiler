@@ -20,6 +20,8 @@ This project focuses on exploring the Just-In-Time (JIT) Compiler, a powerful op
 #### Why We Chose the JIT Compiler
 We chose to focus on the JIT compiler because of its fascinating ability to compile and interpret code simultaneously. This hybrid approach allows for more flexible, adaptive execution, which results in significant performance improvements for many types of applications.
 
+![Reddit: Python gets JIT](/documents/images/reddit_python_jit.png)
+
 JIT compilers are particularly interesting due to:
 
 **Dynamic Optimization**: JIT compilers can analyze the code while it runs, optimizing frequently executed paths for better performance.
