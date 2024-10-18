@@ -6,11 +6,12 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 
 ## Challenges
 1. [Manually compile Java program and view bytecode (to show how compilation work)](/implementation/JAVA/README.md)
-2. Division by zero behaviour: compile C/Rust program on the one hand and Python on the other. See differences when error occured.
-3. run Python with CPython and PyPy (to show with or without JIT)
-4. JAVA example 10 minutes -???
-5. sorting example (to see performance difference)
-6. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet)
+2. [See interpreter error in Python: Division by zero](/implementation/Python/exercise_3/README.md)
+3. [See compiler error in C](/implementation/C/README.md)
+4. run Python with CPython and PyPy (to show with or without JIT)
+5. JAVA example 10 minutes -???
+6. sorting example (to see performance difference)
+7. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet)
 
 
 

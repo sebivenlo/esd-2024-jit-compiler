@@ -7,3 +7,7 @@ Syntax Error
 
 What is the output?
 
+### Repair the script and compile again
+
+What is the output?
+
