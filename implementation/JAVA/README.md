@@ -1,11 +1,16 @@
 # Readme
 
-## Java with VIM
+## Exercise
 
-Build image
+### Compile to Bytecode
 
-    docker build -t my-temurin-vim https://github.com/sebivenlo/esd-2024-jit-compiler.git#main:implementation/JAVA
+    javac SimpleCalculator.java
 
-Run container
+This will create a new file called SimpleCalculator.class
 
-    docker run -it --name java_dev_machine --mount type=bind,source="$(pwd)",target=/usr/src/app my-temurin-vim bash
+### Analyse Bytecode
+
+    javap -c SimpleCalculator
+
+See how the Bytecode works!
+
