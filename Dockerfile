@@ -5,7 +5,9 @@
 FROM eclipse-temurin:23-noble
 
 # Update package list and install Vim
-RUN apt-get update && apt-get install -y vim && apt-get clean
+RUN apt-get update && \
+    apt-get install -y vim python3 python3-pip && \
+    apt-get clean
 
 # Set the working directory
 WORKDIR /usr/src/app
