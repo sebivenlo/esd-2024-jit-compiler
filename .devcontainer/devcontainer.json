@@ -7,7 +7,8 @@
       "vscode": {
         "extensions": [
           "Gruntfuggly.todo-tree",
-          "vscjava.vscode-java-pack"
+          "vscjava.vscode-java-pack",
+          "mnxn.jvm-bytecode-viewer"
         ]
       }
   }
