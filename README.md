@@ -18,3 +18,6 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 
 
 [More info about this ESD project](introduction.md)
+
+
+![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif)
