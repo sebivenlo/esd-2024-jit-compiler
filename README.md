@@ -1,6 +1,8 @@
 # Welcome to the JIT-Compiler Workshop
 
-You will get a pop-up in VSCode to open again the project, to open it in a container (via devcontainer)
+Click pop-up: Folder contains a Dev Container configuration file. **Reopen folder to develop in a container.**
+
+View this in your browser: https://github.com/sebivenlo/esd-2024-jit-compiler
 
 Installed in your container is: Java, JavaScript, Python (CPython, PyPy), Vim and some VScode extensions.
 
