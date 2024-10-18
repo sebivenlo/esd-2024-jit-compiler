@@ -6,7 +6,8 @@
     "customizations": {
       "vscode": {
         "extensions": [
-          "Gruntfuggly.todo-tree"
+          "Gruntfuggly.todo-tree",
+          "vscjava.vscode-java-pack"
         ]
       }
   }
