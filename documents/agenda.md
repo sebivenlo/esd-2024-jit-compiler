@@ -15,7 +15,6 @@ Status: just a suggestion
 - Facilitator only asks questions(no more than 4 minutes otherwise after the workshop), and does not give answers. 
 - Facilitator write input from audience on whiteboard. 
 
-
 - What is a compiler?
   - Does Java has a compiler? How does that work? Ask audience what they remember from PCR1/PCR2.
   - What is inlining?

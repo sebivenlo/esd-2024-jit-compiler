@@ -4,94 +4,54 @@ This document will contain all the documentation we made so far, it includes the
 
 # Table of Contents
 
-- [Project Management](#project-management)
-  - [Module Description](#module-description)
-  - [Agile Methodology](#agile-methodology)
-  - [Project Board](#project-board)
-  - [Assessment Scheduler](#assesment-scheduler)
-  - [Planning for the Workshop and Research](#planning-for-the-workshop-and-research)
-    - [JIT Compiler Workshop](#jit-compiler-workshop)
-      - [1. Introduction to JIT Compilation (5-10 mins)](#1-introduction-to-jit-compilation-5-10-mins)
-        - [What is a JIT Compiler?](#what-is-a-jit-compiler)
-        - [Difference between JIT and AOT Compilation](#difference-between-jit-and-aot-compilation)
-        - [Overview of Key Concepts](#overview-of-key-concepts)
-      - [2. How a JIT Compiler Works (10-15 mins)](#2-how-a-jit-compiler-works-10-15-mins)
-        - [Phases of JIT Compilation](#phases-of-jit-compilation)
-        - [Advantages of JIT](#advantages-of-jit)
-        - [Challenges](#challenges)
-      - [3. JIT Compiler Optimization Techniques (10-15 mins)](#3-jit-compiler-optimization-techniques-10-15-mins)
-        - [Hotspot Optimization](#hotspot-optimization)
-        - [Inlining](#inlining)
-        - [Dead Code Elimination](#dead-code-elimination)
-        - [Register Allocation and Optimization](#register-allocation-and-optimization)
-        - [Adaptive Optimization](#adaptive-optimization)
-      - [4. Comparing JIT Implementations (10 mins)](#4-comparing-jit-implementations-10-mins)
-        - [Java HotSpot JVM (Oracle)](#java-hotspot-jvm-oracle)
-        - [.NET Core CLR (Microsoft)](#net-core-clr-microsoft)
-        - [V8 Engine (Google Chrome)](#v8-engine-google-chrome)
-        - [PyPy (Python)](#pypy-python)
-      - [5. Advantages and Disadvantages of JIT Compilation (5-10 mins)](#5-advantages-and-disadvantages-of-jit-compilation-5-10-mins)
-        - [Advantages](#advantages)
-        - [Disadvantages](#disadvantages)
-      - [6. Real-World Use Cases of JIT (5-10 mins)](#6-real-world-use-cases-of-jit-5-10-mins)
-        - [JVM for Java Applications](#jvm-for-java-applications)
-        - [Game Engines (Unity/C#)](#game-engines-unityc)
-        - [Dynamic Languages (JavaScript, Python)](#dynamic-languages-javascript-python)
-      - [7. Interactive Demos (15-20 mins)](#7-interactive-demos-15-20-mins)
-        - [Live Coding](#live-coding)
-        - [Hotspot Example](#hotspot-example)
-        - [Performance Profiling](#performance-profiling)
-        - [Comparing JIT vs AOT Performance](#comparing-jit-vs-aot-performance)
-      - [8. Common Challenges in JIT Design (5-10 mins)](#8-common-challenges-in-jit-design-5-10-mins)
-        - [Startup Time](#startup-time)
-        - [Security Considerations](#security-considerations)
-        - [Multithreading and Concurrency](#multithreading-and-concurrency)
-      - [9. Future of JIT Compilation (5 mins)](#9-future-of-jit-compilation-5-mins)
-        - [Advances in Hardware (e.g., AI, GPU Optimizations)](#advances-in-hardware-eg-ai-gpu-optimizations)
-        - [WebAssembly (Wasm)](#webassembly-wasm)
-        - [Machine Learning and JIT](#machine-learning-and-jit)
-      - [10. Q&A and Discussion (10-15 mins)](#10-qa-and-discussion-10-15-mins)
-      - [Resources and Tools for the Workshop](#resources-and-tools-for-the-workshop)
-      - [Bonus: Hands-On Session or Code Challenges (optional)](#bonus-hands-on-session-or-code-challenges-optional)
+- [JIT Compiler Workshop](#jit-compiler-workshop)
+  - [1. Introduction to JIT Compilation (5-10 mins)](#1-introduction-to-jit-compilation-5-10-mins)
+    - [What is a JIT Compiler?](#what-is-a-jit-compiler)
+    - [Difference between JIT and AOT Compilation](#difference-between-jit-and-aot-compilation)
+    - [Overview of Key Concepts](#overview-of-key-concepts)
+  - [2. How a JIT Compiler Works (10-15 mins)](#2-how-a-jit-compiler-works-10-15-mins)
+    - [Phases of JIT Compilation](#phases-of-jit-compilation)
+    - [Advantages of JIT](#advantages-of-jit)
+    - [Steps of creation of own JIT compiler](#steps-of-creation-of-own-jit-compiler)
+    - [Challenges](#challenges)
+  - [3. JIT Compiler Optimization Techniques (10-15 mins)](#3-jit-compiler-optimization-techniques-10-15-mins)
+    - [Hotspot Optimization](#hotspot-optimization)
+    - [Inlining](#inlining)
+    - [Dead Code Elimination](#dead-code-elimination)
+    - [Register Allocation and Optimization](#register-allocation-and-optimization)
+    - [Adaptive Optimization](#adaptive-optimization)
+  - [4. Comparing JIT Implementations (10 mins)](#4-comparing-jit-implementations-10-mins)
+    - [Java HotSpot JVM (Oracle)](#java-hotspot-jvm-oracle)
+    - [.NET Core CLR (Microsoft)](#net-core-clr-microsoft)
+    - [V8 Engine (Google Chrome)](#v8-engine-google-chrome)
+    - [PyPy (Python)](#pypy-python)
+  - [5. Advantages and Disadvantages of JIT Compilation (5-10 mins)](#5-advantages-and-disadvantages-of-jit-compilation-5-10-mins)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+  - [6. Real-World Use Cases of JIT (5-10 mins)](#6-real-world-use-cases-of-jit-5-10-mins)
+    - [JVM for Java Applications](#jvm-for-java-applications)
+    - [Game Engines (Unity/C#)](#game-engines-unityc)
+    - [Dynamic Languages (JavaScript, Python)](#dynamic-languages-javascript-python)
+  - [7. Interactive Demos (15-20 mins)](#7-interactive-demos-15-20-mins)
+    - [Live Coding](#live-coding)
+    - [Hotspot Example](#hotspot-example)
+    - [Performance Profiling](#performance-profiling)
+    - [Comparing JIT vs AOT Performance](#comparing-jit-vs-aot-performance)
+  - [8. Common Challenges in JIT Design (5-10 mins)](#8-common-challenges-in-jit-design-5-10-mins)
+    - [Startup Time](#startup-time)
+    - [Security Considerations](#security-considerations)
+    - [Multithreading and Concurrency](#multithreading-and-concurrency)
+  - [9. Future of JIT Compilation (5 mins)](#9-future-of-jit-compilation-5-mins)
+    - [Advances in Hardware (e.g., AI, GPU Optimizations)](#advances-in-hardware-eg-ai-gpu-optimizations)
+    - [WebAssembly (Wasm)](#webassembly-wasm)
+    - [Machine Learning and JIT](#machine-learning-and-jit)
+  - [10. Q&A and Discussion (10-15 mins)](#10-qa-and-discussion-10-15-mins)
+  - [Resources and Tools for the Workshop](#resources-and-tools-for-the-workshop)
+  - [Bonus: Hands-On Session or Code Challenges (optional)](#bonus-hands-on-session-or-code-challenges-optional)
 
 [Go back to top](#table-of-contents)
 
 ---
-
-# Project Management
-
-This part will containt all the work informations such as methodologies, delivares, deadlines, etc.
-
-## Module Description
-
-The module description can be found in this link: [module description](./images/md_esd.pdf). The module description contains all needed information of this module.
-
-[Go back to top](#table-of-contents)
-
-## Agile Methodology
-
-For this course we are going to use a variation of Agile which only covers the springs and the small tasks.
-
-[Go back to top](#table-of-contents)
-
-## Project Board
-
-We are going to use a project board which consists on 3 blocks(Backlog, In progress and Done) to keep in track all our process and to see on which tasks we are currently working on. See image below to see the project board structure
-
-![Alt text](/documents/images/project_board.png)
-
-
-[Go back to top](#table-of-contents)
-
-## Assesment Scheduler
-
-This is the schedule of all students workshop, the duration is of 90 minutes where the students should present their research work and give the audience a few code examples where they also can test the work of the students. see Image below.
-
-![Alt text](/project_management/images/workshop_presentation_schedule.png)
-
-[Go back to top](#table-of-contents)
-
-## Planning for the Workshop and Research
 
 ### JIT Compiler Workshop
 
@@ -191,6 +151,25 @@ types of interpreters: https://builtin.com/software-engineering-perspectives/com
 - **Optimization at runtime**: Adaptations to the hardware or input-specific optimizations.
 - **Faster execution for hot code**: Native code is faster than interpreted bytecode.
 
+##### Steps of creation of own JIT compiler:
+
+- Interpreters
+Before writing a JIT compiler, it’s helpful to write an interpreter. An interpreter executes code directly without compiling it, and it can serve as the foundation for a JIT compiler. You will need to understand how to evaluate programs at runtime.
+
+- Intermediate Representation (IR)
+JIT compilers often use an intermediate representation, which is a lower-level, hardware-agnostic representation of the program code. You need to design or adopt an IR that can be efficiently converted to machine code.
+
+- Machine Code Generation
+This is one of the most difficult parts. You will need to translate the IR to actual machine code specific to the target CPU architecture (e.g., x86, ARM). Familiarity with assembly languages is required.
+
+- Runtime Optimization
+A JIT compiler applies optimizations dynamically, based on the program's behavior at runtime. This is where it differs from static compilers (e.g., GCC or Clang). You might need to implement profiling, inlining, loop unrolling, or other optimizations.
+
+- Memory Management
+Allocating memory for machine code and managing it safely is tricky. You will also need to deal with garbage collection if your source language supports it.
+
+
+
 ##### Challenges:
 
 - **Initial delay (warm-up time)** while the JIT compiles code.
@@ -216,6 +195,10 @@ article about single and multilevel jit: chrome-extension://efaidnbmnnnibpcajpcg
 
 warming up issue: https://docs.azul.com/prime/analyzing-tuning-warmup
 
+Creating own JIT: https://github.com/spencertipping/jit-tutorial 
+
+Creating own JIT: https://medium.com/@minhaz217/lets-understand-the-javascript-just-in-time-compiler-jit-and-how-the-v8-engine-works-ff6276d131a1 
+
 [Go back to top](#table-of-contents)
 
 ---
@@ -223,14 +206,14 @@ warming up issue: https://docs.azul.com/prime/analyzing-tuning-warmup
 #### 3. JIT Compiler Optimization Techniques (10-15 mins)
 This part of the research will contain the phases that shows the optimization techinques the JIT compailer uses, there are some variations of JIT compilation depending on the programming languages. This will focus on the JAVA language:
 
-#### Phase 1 - Inlining
+##### Phase 1 - Inlining
 Inlining is the process by which the trees of smaller methods are merged, or "inlined", into the trees of their callers. This speeds up frequently executed method calls. Two inlining algorithms with different levels of aggressiveness are used, depending on the current optimization level. Optimizations performed in this phase include:
 - Trivial inlining
 - Call graph inlining
 - Tail recursion elimination
 - Virtual call guard optimizations
 
-#### Phase 2 - Local Optimizations
+##### Phase 2 - Local Optimizations
 Local optimizations analyze and improve a small section of the code at a time. Many local optimizations implement tried and tested techniques used in classic static compilers. The optimizations include:
 - Local data flow analyses and optimizations
 - Register usage optimization
@@ -238,7 +221,7 @@ Local optimizations analyze and improve a small section of the code at a time. M
 
 These techniques are applied repeatedly, especially after global optimizations, which might have pointed out more opportunities for improvement.
 
-#### Phase 3 - Control Flow Optimizations
+##### Phase 3 - Control Flow Optimizations
 Control flow optimizations analyze the flow of control inside a method (or specific sections of it) and rearrange code paths to improve their efficiency. The optimizations are:
 - Code reordering, splitting, and removal
 - Loop reduction and inversion
@@ -248,7 +231,7 @@ Control flow optimizations analyze the flow of control inside a method (or speci
 - Exception-directed optimization
 - Switch analysis
 
-#### Phase 4 - Global Optimizations
+##### Phase 4 - Global Optimizations
 Global optimizations work on the entire method at once. They are more "expensive", requiring larger amounts of compilation time, but can provide a great increase in performance. The optimizations are:
 - Global data flow analyses and optimizations
 - Partial redundancy elimination
@@ -256,7 +239,7 @@ Global optimizations work on the entire method at once. They are more "expensive
 - GC and memory allocation optimizations
 - Synchronization optimizations
 
-#### Phase 5 - Native Code Generation
+##### Phase 5 - Native Code Generation
 Native code generation processes vary, depending on the platform architecture. Generally, during this phase of the compilation, the trees of a method are translated into machine code instructions; some small optimizations are performed according to architecture characteristics. The compiled code is placed into a part of the JVM process space called the code cache; the location of the method in the code cache is recorded, so that future calls to it will call the compiled code. At any given time, the JVM process consists of the JVM executable files and a set of JIT-compiled code that is linked dynamically to the bytecode interpreter in the JVM.
 
 
@@ -304,7 +287,7 @@ jit optimization: https://www.ibm.com/docs/en/sdk-java-technology/8?topic=compil
 - **Memory overhead** for both compiled and interpreted code.
 - **Complexity** in development and debugging.`
 
-# JIT Compilation vs. AOT Compilation
+##### JIT Compilation vs. AOT Compilation
 
 JIT Compilation (Just-In-Time Compilation) and Ahead-of-Time (AOT) Compilation are two distinct approaches to compiling and executing code in software development. They each have their advantages and drawbacks. Let’s compare JIT Compilation and AOT Compilation in various aspects:
 
@@ -361,9 +344,25 @@ Benefit: Enhances performance for Python, which is traditionally an interpreted 
 ![Alt text](/documents/images/pypy_vs_cpython.png)
 
 
+Few programming languages have been around for so long. Java started in 1995, and in 2023 it’s still among the top 3 languages. Research points to Java’s popularity as well: Stack Overflow, TIOBE index, and GitHub.
+
+![Alt text](/documents/images/line_chart_most_popular_programming_languages.png)
+
+
 In conclusion, a JIT compiler is a critical component of a programming language's runtime environment that dynamically translates and optimizes code just before execution. It offers performance improvements, adaptability, reduced memory footprint, and faster start-up times. JIT compilation finds extensive use in virtual machines, dynamic languages, and gaming and graphics programming.
 
-#### what is next for JIT compiler?
+##### Why Some Programs Don't Use JIT:
+Simplicity: Interpreters are simpler to implement and can be easier to debug or deploy across platforms.
+Performance Stability: AOT compilation can offer predictable performance without the warm-up time that JITs require to analyze and optimize the code.
+Resource Constraints: In resource-constrained environments (e.g., embedded systems), JIT compilation can add overhead in terms of memory usage, startup time, and complexity.
+Security Concerns: JIT compilation can introduce security vulnerabilities, especially in environments where memory execution is tightly controlled (e.g., iOS disallows JIT to improve security).
+
+**C:** Programs written in C are typically compiled using a compiler like GCC or Clang into machine code for a specific platform. There’s no JIT compilation involved.
+**C++:** Similar to C, C++ uses ahead-of-time compilation.
+**Rust:** Rust uses an ahead-of-time compilation model (via LLVM) and does not use JIT compilation.
+**Go:** Google's Go programming language uses a traditional AOT compilation model. Go programs are compiled directly to machine code.
+
+##### what is next for JIT compiler?
 
 Just-In-Time (JIT) Compilation is an evolving field in software development and runtime optimization. As technology advances and programming languages evolve, several future trends in JIT Compilation are emerging.
 
@@ -382,6 +381,8 @@ CLR: https://learn.microsoft.com/en-us/dotnet/standard/clr
 pypy vs cpython: https://pypy.org/
 
 future trends of jit: https://www.javacodegeeks.com/2023/09/just-in-time-jit-compilation-benefits-drawbacks-and-the-evolving-landscape.html 
+
+Most popular languages: https://aristeksystems.com/blog/is-java-still-relevant/#:~:text=Java%20started%20in%201995%2C%20and,%2C%20TIOBE%20index%2C%20and%20GitHub.&text=Java%20is%20a%20cross%2Dplatform,that%20makes%20Java%20cross%2Dplatform.
 
 [Go back to top](#table-of-contents)
 
