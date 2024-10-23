@@ -1,16 +1,17 @@
-# Dockerfile 
-# TODO merge other Dockerfiles (Python, JavaScript) into this Dockerfile, so the complete project only has 1 Dockerfile in the root directory
-
-# Use the latest Eclipse Temurin image for JDK 23
+# Use the latest Eclipse Temurin image for JDK 23 (Java Development Kit)
 FROM eclipse-temurin:23-noble
 
-# Update package list and install Vim
+# Update package list and install Python, Node.js, and Vim
 RUN apt-get update && \
-    apt-get install -y vim python3 python3-pip && \
+    apt-get install -y vim python3 python3-pip curl && \
     apt-get clean
+
+# Install Node.js and npm (for JavaScript support)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
 
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Default command to keep the container running (optional)
+# Default command (bash, can be overridden when running the container)
 CMD ["bash"]

@@ -10,10 +10,8 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 3. [See compiler error in C](/implementation/C/README.md)
 4. run Python with CPython and PyPy (to show with or without JIT)
 5. JAVA example 10 minutes -???
-6. sorting example (to see performance difference)
+6. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/implementation/JavaScript/README.md)
 7. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet)
-
-
 
 
 :speech_balloon: Please ask Jorge or Thijs for help if you encounter a problem.

@@ -1,4 +1,4 @@
-function fibonacci(n) {
+function fibonacciInefficient(n) {
     if (n < 2) return 1; // Base case for n = 0 or 1
 
     let a = 1, b = 1; // Initial values for Fibonacci(0) and Fibonacci(1)
@@ -7,6 +7,11 @@ function fibonacci(n) {
         let temp = a + b; // Sum of the previous two numbers
         a = b; // Shift the numbers for the next iteration
         b = temp;
+
+        // Artificial slow-down: Add unnecessary heavy computation
+        for (let j = 0; j < 1e6; j++) {
+            Math.sqrt(j); // A pointless operation that slows down the loop
+        }
     }
 
     return b; // The nth Fibonacci number
@@ -14,7 +19,7 @@ function fibonacci(n) {
 
 let n = 32;
 let start = Date.now();
-let fibResult = fibonacci(n);
+let fibResult = fibonacciInefficient(n);
 let stop = Date.now();
 
 console.log(`Fibonacci(${n}): ${fibResult}`);
