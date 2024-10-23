@@ -11,13 +11,13 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 4. run Python with CPython and PyPy (to show with or without JIT)
 5. JAVA example 10 minutes -???
 6. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/implementation/JavaScript/README.md)
-7. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet)
+<!-- 7. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
 
 
 :speech_balloon: Please ask Jorge or Thijs for help if you encounter a problem.
 
 
-[More info about this ESD project](introduction.md)
+[More info about this ESD project](./documents/README.md)
 
 
 ![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif)
