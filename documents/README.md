@@ -401,5 +401,3 @@ also make compiler of some use cases we mentioned earler
 ##### Live Coding:
 
 - Show examples of running code with JIT optimizations in a language like Java or Python (PyPy).
-
-
