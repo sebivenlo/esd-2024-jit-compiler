@@ -1,7 +1,7 @@
 # Use the latest Eclipse Temurin image for JDK 23 (Java Development Kit)
 FROM eclipse-temurin:23-noble
 
-# Update package list and install Python, Node.js, and Vim
+# Update package list and install Python, cURL and Vim
 RUN apt-get update && \
     apt-get install -y vim python3 python3-pip curl && \
     apt-get clean
