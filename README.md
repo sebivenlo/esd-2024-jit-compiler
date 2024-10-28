@@ -13,9 +13,8 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 2. [See interpreter error in Python: Division by zero](/implementation/Python/exercise_3/README.md)
 3. [See compiler error in C](/implementation/C/README.md)
 4. run Python with CPython and PyPy (to show with or without JIT)
-5. JAVA example 10 minutes -???
-6. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/implementation/JavaScript/README.md)
-<!-- 7. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
+5. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/implementation/JavaScript/README.md)
+<!-- 6. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
 
 
 :speech_balloon: Please ask Jorge or Thijs for help if you encounter a problem.
