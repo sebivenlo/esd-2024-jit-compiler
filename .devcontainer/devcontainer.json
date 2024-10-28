@@ -6,10 +6,10 @@
     "customizations": {
       "vscode": {
         "extensions": [
-          "Gruntfuggly.todo-tree",
-          "vscjava.vscode-java-pack",
-          "mnxn.jvm-bytecode-viewer",
-          "ms-python.python"
+          "Gruntfuggly.todo-tree", // for finding TODO's
+          "vscjava.vscode-java-pack", // Java
+          "mnxn.jvm-bytecode-viewer", // Java
+          "ms-python.python" // Python
         ]
       }
   }
