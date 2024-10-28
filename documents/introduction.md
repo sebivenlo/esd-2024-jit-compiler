@@ -4,20 +4,15 @@ This repository is part of the ESD (Enterprise Software Development) module, whe
 
 ## Table of Contents
 
-- [documents](./documents)
-- [implementation](./implementation)
-- [project_management](./roject_management)
-
-### Team members 
-
-- Jorge Arauz 
-- Thijs Hofmans
+- [documents](../documents/)
+- [workshop](../workshop/)
+- [project_management](../project_management/)
 
 ### Project/workshop Description
 
 This project focuses on exploring the Just-In-Time (JIT) Compiler, a powerful optimization technique used in modern programming languages to achieve a balance between interpretation and compilation. Unlike traditional compilers, which translate source code into machine code before execution, JIT compilers work dynamically, compiling code during runtime. This means JIT combines the advantages of interpretation (immediate execution) with those of compilation (performance optimization).
 
-#### Why We Chose the JIT Compiler
+#### Why we chose the JIT Compiler
 We chose to focus on the JIT compiler because of its fascinating ability to compile and interpret code simultaneously. This hybrid approach allows for more flexible, adaptive execution, which results in significant performance improvements for many types of applications.
 
 ![Reddit: Python gets JIT](/documents/images/reddit_python_jit.png)
@@ -35,7 +30,7 @@ By diving into the inner workings of JIT compilers, we aim to gain a deeper unde
 
 ## Audience
 
-Our audience consist of 4th year Informatics students. There will be around 30 students and 2 teachers. They learned Java in PRC1/PRC2/ALDA. Learned C programming in OSCO. And in projects learned about Javascript/TypeScript. In Data Science, and maybe internship/minor learned about Python. In PRC1 or PRC2, they learned about the Java Architecture, like the JVM.
+Our audience consist of 4th year Informatics students. There will be around 30 students and 2 teachers. Students learned Java in PRC1/PRC2/ALDA. Learned C programming in OSCO. And in projects learned about Javascript/TypeScript. In Data Science, and maybe internship/minor learned about Python. In PRC1 or PRC2, students learned about the Java Architecture, like the JVM.
 
 ## Workshop
 Training workshops are designed to teach new skills or knowledge to attendees. The goal of a training workshop is to provide attendees with the knowledge and skills they need to perform a specific task or function. Activities in a training workshop might include lectures, demonstrations, hands-on practice, and group discussions. Source: https://makeiterate.com/how-to-plan-a-workshop-a-quick-and-easy-guide/
