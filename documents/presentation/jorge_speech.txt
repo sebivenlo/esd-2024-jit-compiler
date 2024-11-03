@@ -14,12 +14,108 @@ THIJS student knowledge
 ----------------------------------------------------------------
 what is jit compiler?
 
+-- first
+John McCarthy, an American computer scientist, made a profound impact on programming languages and artificial intelligence. In 1960, 
+he introduced the programming language LISP (short for LISt Processing), which is considered one of the earliest high-level programming languages and is still in use today. 
+LISP was pivotal because it introduced the concept of interpreted languages, where code is read and executed line by line by an interpreter, 
+instead of being compiled to machine code all at once before execution.
+
+McCarthy's work on LISP paved the way for the development of other interpreted languages and, by extension, 
+languages that could benefit from Just-In-Time (JIT) compilation. Interpreted languages generally offer flexibility, 
+as they allow for dynamic typing and code generation at runtime. However, one downside is that interpreted languages often run more slowly than 
+fully compiled languages because of the overhead of interpreting each line of code in real-time.
+
+The concept of JIT compilation would later address this performance bottleneck. JIT takes the "interpreted" code and compiles it to 
+native machine code "just in time" as it is about to be executed. This approach leverages the flexibility of interpretation while achieving the speed of compilation. 
+Thus, McCarthy's work laid some foundational principles that would later influence JIT compilation technologies, especially for languages that require high runtime 
+flexibility and fast execution.
+
+-- second
+Interpreted programs, like those written in Python, JavaScript, and historically in LISP, 
+are executed by an interpreter, which reads each line of code and executes it directly. This interpretation process is typically slower 
+than compiled code because:
+
+The interpreter repeatedly decodes instructions at runtime.
+It doesn’t have the benefit of pre-optimization (as compiled code does) to improve efficiency.
+There’s often a need for additional runtime checks for type safety and variable handling.
+Over the years, various techniques have been developed to mitigate these performance drawbacks. Some of these methods include:
+
+Caching Intermediate Code: Storing intermediate representations of code, such as bytecode, 
+allows the program to avoid re-parsing the source code every time it’s executed. Bytecode is closer to machine code and can be executed faster by the interpreter.
+
+Inline Caching: By caching certain types of operations (like method lookups) based on the 
+current runtime environment, interpreters can avoid redundant computations and speed up execution.
+
+Dynamic Typing Optimizations: Since many interpreted languages are dynamically typed, type 
+information isn’t known until runtime. Advanced interpreters use type inference and speculation to predict data types, 
+which allows certain optimizations and reduces the need for repeated type checking.
+
+However, Just-In-Time (JIT) compilation is perhaps the most advanced method for improving 
+the performance of interpreted programs. Unlike static compilation (which happens before runtime) or 
+pure interpretation (which executes code line-by-line in real-time), JIT compilers compile portions of the code to machine 
+code just as they are about to run. This approach lets JIT take advantage of runtime information to perform optimizations specific to 
+the current execution context, resulting in code that runs significantly faster than purely interpreted code.
+
+-- third
+Dynamic compilation is the process of compiling code at runtime, as opposed to static compilation, which occurs before the program is executed. JIT compilers are a specific form of dynamic compilation, where code is translated to machine language on-the-fly, enabling performance improvements by optimizing based on the actual runtime conditions.
+
+Dynamic compilation offers several advantages:
+
+Runtime Information Access: Since the code is compiled during execution, the compiler has access to actual data and workload conditions, allowing it to make optimizations based on the specific environment.
+
+Adaptive Optimization: Dynamic compilers can analyze which parts of the code are most frequently executed (often called “hot paths”) and apply aggressive optimizations to those sections while leaving rarely executed code unoptimized to save time.
+
+Reduced Initial Compilation Time: Since only the parts of the code that are actively used need to be compiled, dynamic compilation can reduce the initial time needed to launch the application.
+
+There are different types of dynamic compilation used in JIT environments, such as:
+
+Baseline JIT Compilation: This type quickly compiles code to machine language with minimal optimization. It’s primarily used to get code running fast and can later be further optimized if it's identified as a hot path.
+
+Optimizing JIT Compilation: Once the JIT compiler identifies frequently executed code, it may perform more advanced optimizations, such as inlining functions or loop unrolling, to further increase speed.
+
+Dynamic compilation and JIT technologies have been particularly successful in languages like Java (with the HotSpot JIT compiler) and JavaScript (with JIT compilers in modern browsers). These languages rely on runtime flexibility, which allows JIT compilers to exploit dynamic information for optimizations that are not possible with static compilation alone.
+
 ---------------------------------------------------------------
 what are the pros and cons of using jit compiler?
+-- Advantages of JIT Compilation
+Adaptive Optimizations: JIT compilers can optimize code based on real-time data and usage patterns, 
+tailoring performance improvements to the specific conditions of the runtime environment.
+
+Platform Independence: Languages like Java and C# benefit from JIT compilation because it allows them to be compiled to intermediate bytecode, 
+which is then translated to machine code at runtime on any platform, making these languages platform-independent.
+
+Faster Execution After Initial Compilation: Once the JIT compiler translates frequently used sections of code into optimized machine code, 
+those sections run faster in subsequent executions, leading to significant performance boosts over time.
+
+
+-- Disadvantages of JIT Compilation
+Initial Startup Delay: JIT compilation introduces a delay during the first execution of the code as the JIT compiler translates portions 
+of the code into machine language on the fly, which can impact startup time.
+
+Memory Overhead: Since JIT compilers handle both compiled (machine) code and interpreted (bytecode or source) code, they require more
+ memory than purely compiled or interpreted systems.
+
+Complexity in Development and Debugging: The runtime nature of JIT adds complexity to the development and debugging processes, as 
+optimizations and transformations can change the code behavior dynamically, making it more challenging to trace issues.
 
 -------------------------------------------------------------
 what are use cases for jit compiler?
 
+1. Virtual Machines: Many popular programming languages, such as Java, .NET, and Python, rely on JIT compilation to execute their programs efficiently. The JIT compiler in these virtual machines translates the bytecode into machine code, providing performance benefits without sacrificing portability.
+2. Dynamic Languages: JIT compilation is especially advantageous for dynamic languages like JavaScript and Ruby. These languages often execute code that is generated or modified at runtime, and a JIT compiler can optimize this code based on the actual runtime behavior.
+3. Gaming and Graphics: JIT compilation is widely used in gaming and graphics programming. It allows for real-time optimization of complex algorithms, such as rendering or physics simulations, to achieve smooth and responsive gameplay.
+
+
+where not to use jit compiler
+Simplicity: Interpreters are simpler to implement and can be easier to debug or deploy across platforms.
+Performance Stability: AOT compilation can offer predictable performance without the warm-up time that JITs require to analyze and optimize the code.
+Resource Constraints: In resource-constrained environments (e.g., embedded systems), JIT compilation can add overhead in terms of memory usage, startup time, and complexity.
+Security Concerns: JIT compilation can introduce security vulnerabilities, especially in environments where memory execution is tightly controlled (e.g., iOS disallows JIT to improve security).
+
+**C:** Programs written in C are typically compiled using a compiler like GCC or Clang into machine code for a specific platform. There’s no JIT compilation involved.
+**C++:** Similar to C, C++ uses ahead-of-time compilation.
+**Rust:** Rust uses an ahead-of-time compilation model (via LLVM) and does not use JIT compilation.
+**Go:** Google's Go programming language uses a traditional AOT compilation model. Go programs are compiled directly to machine code.
 
 --------------------------------------------------------------------
 Exercises
@@ -34,6 +130,13 @@ QUIZZ
 
 ----------------------------------------------------------------
 Reflection
+
+Did you learned now a little bit of what jit compiler can offer?
+
+Is there anything about JIT compilation that you feel wasn’t covered but would like to learn more about?
+
+Did you liked the workshop?
+
 ------------------------------------------------------------------
 THIJS Questions
 
