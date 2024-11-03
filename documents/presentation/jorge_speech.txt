@@ -1,0 +1,39 @@
+Introduction
+
+Welcome everyone to our workshop, the topic for today will be JIT compiler. This workshop will be given by me(jorge) and thijs
+
+the mail goal of this workshop is to show and to teach what jit compiler is and how it can benefit you
+
+there are two rules for this workshop,
+1- if there is questions just raise your hand and we will stop to anwser your questions
+2- when there is a votation, e.g. for pause. we are going to vote and the most of votes will win
+
+lets start with the content of this presentation
+-- -----------------------------------------------------------------
+THIJS student knowledge
+----------------------------------------------------------------
+what is jit compiler?
+
+---------------------------------------------------------------
+what are the pros and cons of using jit compiler?
+
+-------------------------------------------------------------
+what are use cases for jit compiler?
+
+
+--------------------------------------------------------------------
+Exercises
+
+ALDA excersie
+
+
+-------------------------------------------------------------------
+THIJS Future of jit compiler?
+------------------------------------------------------------------
+QUIZZ
+
+----------------------------------------------------------------
+Reflection
+------------------------------------------------------------------
+THIJS Questions
+
