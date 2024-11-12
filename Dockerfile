@@ -1,28 +1,17 @@
-# Start with a JDK + Python (CPython) base image
-FROM adoptopenjdk:11-jre-hotspot-bionic
+# Use the latest Eclipse Temurin image for JDK 23 (Java Development Kit)
+FROM eclipse-temurin:23-noble
 
-# Install PyPy, curl, vim, Node.js 18, and npm
+# Update package list and install Python, cURL and Vim
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        pypy3 \
-        build-essential \
-        curl \
-        vim \
-        python3-pip && \
-    # Install Node.js 18 and npm
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs && \
-    # Install numpy for both PyPy and CPython
-    pypy3 -m ensurepip && \
-    pypy3 -m pip install numpy && \
-    python3 -m pip install numpy && \
-    # Clean up
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y vim python3 python3-pip curl && \
+    apt-get clean
 
-# Set default working directory
-WORKDIR /workspace
+# Install Node.js and npm (for JavaScript support)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
 
-# Default command to start a shell for interactive use
-# CMD ["/bin/bash"]
+# Set the working directory
+WORKDIR /usr/src/app
+
+# Default command (bash, can be overridden when running the container)
 CMD ["bash"]
