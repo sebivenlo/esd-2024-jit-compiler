@@ -9,11 +9,11 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 ![Alt text](./project_management/images/install_container.png)
 
 ## Challenges
-1. [Manually compile Java program and view bytecode (to show how compilation work)](/workshop/Java/README.md)
-2. [See interpreter error in Python: Division by zero](/workshop/Python/exercise_3/README.md)
-3. [See compiler error in C](/workshop/C/README.md)
+1. [Manually compile Java program and view bytecode (to show how compilation work)](/workshop/java/README.md)
+2. [See interpreter error in Python: Division by zero](/workshop/python/exercise_3/README.md)
+3. [See compiler error in C](/workshop/c/README.md)
 4. run Python with CPython and PyPy (to show with or without JIT)
-5. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/workshop/JavaScript/README.md)
+5. [ALDA Sorting exercise. Testing different Sorts with JIT Compiler](/workshop/javascript/README.md)
 <!-- 6. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
 
 
