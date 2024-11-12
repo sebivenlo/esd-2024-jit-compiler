@@ -8,7 +8,7 @@
 
 This will create a .pyc file in a directory named __pycache__.
 
-### Compilatin file
+### Compilation file
 
     python __pycache__/simple_calculator.cpython-312.pyc
 
@@ -33,5 +33,5 @@ Run the .py file again
     python3 simple_calculator.py
 
 Compare the Python bytecode with the Java bytecode!
-Name 3 differences.
+-> Name 3 differences.
 
