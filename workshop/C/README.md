@@ -1,4 +1,4 @@
-### C
+# C
 
 ## Challenge
 Syntax Error
@@ -8,6 +8,11 @@ Syntax Error
 What is the output?
 
 ### Repair the script and compile again
+
+### Run it
+
+    ./hello_world
+
 
 What is the output?
 
