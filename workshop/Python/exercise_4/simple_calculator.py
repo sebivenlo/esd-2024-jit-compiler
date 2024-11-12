@@ -1,4 +1,5 @@
-import dis
+# TODO 1
+# import dis
 
 class SimpleCalculator:
     def main(self):
@@ -11,4 +12,5 @@ class SimpleCalculator:
 calculator = SimpleCalculator()
 calculator.main()
 
-dis.dis(SimpleCalculator)
+# TODO 2
+# dis.dis(SimpleCalculator)
