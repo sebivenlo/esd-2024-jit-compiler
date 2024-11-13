@@ -9,12 +9,19 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 ![Dev Containers: Reopen in Container](./project_management/images/reopen_in_container.png)
 
 ## Challenges
-1. [Manually compile Java program and view bytecode (see how compilation work)](/workshop/java/README.md)
-2. [See runtime error in Python: Division by zero](/workshop/python/runtime_error/README.md)
-3. [See compiler error in C](/workshop/c/README.md)
-4. [Run Python with CPython (no JIT) and PyPy (JIT)](/workshop/python/jit_vs_jitless/)
-5. [ALDA Sorting exercise. Testing different Sorts with (and without) JIT Compiler](/workshop/javascript/README.md)
-<!-- 6. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
+1. Manually compile program and view bytecode (see how compilation work)
+
+   a. [Java bytecode](/workshop/java/README.md)
+
+   b. [Python bytecode](/workshop/python/bytecode_conversion/README.md)
+2. Runtime vs compiler error
+
+   a. [See runtime error in Python: Division by zero](/workshop/python/runtime_error/README.md)
+
+   b. [See compiler error in C](/workshop/c/README.md)
+3. [Run Python with CPython (no JIT) and PyPy (JIT)](/workshop/python/jit_vs_jitless/)
+4. [ALDA Sorting exercise (JavaScript). Testing different Sorts with (and without) JIT Compiler](/workshop/javascript/README.md)
+<!-- 5. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
 
 
 :speech_balloon: Please ask **Jorge** or **Thijs** for help if you encounter a problem.
