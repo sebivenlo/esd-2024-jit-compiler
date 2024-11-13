@@ -60,7 +60,7 @@ RUN /opt/pypy/bin/pypy3 -m pip install numpy
 RUN pypy3 -m pip show numpy
 
 # Set the working directory
-WORKDIR /usr/src/app
+WORKDIR /workspace
 
 # Default command (bash, can be overridden when running the container)
 CMD ["bash"]
