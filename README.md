@@ -17,12 +17,11 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 <!-- 6. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
 
 
-:speech_balloon: Please ask Jorge or Thijs for help if you encounter a problem.
+:speech_balloon: Please ask **Jorge** or **Thijs** for help if you encounter a problem.
 
-
-Go to documentation to see the complete work: [All documention about JIT Compiler](./documents/README.md)
-
-Go to project management to see how we divided the tasks: [Project Management](./project_management/README.md)
+Links:
+- [Documention about JIT Compiler](./documents/README.md)
+- [Project Management](./project_management/README.md)
 
 
 ![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif)
