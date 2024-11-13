@@ -7,17 +7,15 @@ Visualization: Points in the Mandelbrot set are typically colored black, while p
 
 Mathematical Beauty: The set exemplifies how simple mathematical rules can lead to complex and beautiful results, making it a popular subject in mathematics, art, and computer graphics.
 
-### Installing image
-
-docker build -t mandelbrot-multi .
+### Run
 
 ##### Without JIT 
 
-run this command: docker run mandelbrot-multi
+    python3 mandelbrot.py
 
 ##### With JIT 
 
-run this command: docker run mandelbrot-multi pypy3 ./mandelbrot.py
+    pypy3 mandelbrot.py
 
 
 
