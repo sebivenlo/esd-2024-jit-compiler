@@ -27,7 +27,8 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 :speech_balloon: Please ask **Jorge** or **Thijs** for help if you encounter a problem.
 
 Links:
-- [Documention about JIT Compiler](./documents/README.md)
+- [Documentation about JIT Compiler](./documents/README.md)
+- [Workshop approach](./documents/approach.md)
 - [Project Management](./project_management/README.md)
 
 <!-- ![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif) -->
