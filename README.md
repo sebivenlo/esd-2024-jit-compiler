@@ -1,10 +1,10 @@
 Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compiler
 
 # Welcome to the JIT-Compiler Workshop
-
+## Docker
 **Important**: Before starting the challenges, we need to create the Docker container that includes all the necessary programming languages and dependencies.
 
-Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen in container.**. See image below
+Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen in container.**. See image below. Missed it? Open Command Palette > 'Dev Containers: Reopen in Container'.
 
 ![Alt text](./project_management/images/install_container.png)
 
@@ -23,7 +23,6 @@ Links:
 - [Documention about JIT Compiler](./documents/README.md)
 - [Project Management](./project_management/README.md)
 
-
-![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif)
+<!-- ![Compiling](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNveWZhM3JzNXZ5N2Zsb2R5am9rdHoxZmJ4M203MjB6aW1xc3NxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif) -->
 
 <!-- You found me -->
