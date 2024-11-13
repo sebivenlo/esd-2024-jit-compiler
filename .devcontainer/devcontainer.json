@@ -1,7 +1,10 @@
 {
     "name": "JIT Compiler workshop",
     "build": {
-      "dockerfile": "../Dockerfile"
+      "dockerfile": "../Dockerfile",
+      "args": {
+        "TARGETARCH": "${localEnv:TARGETARCH}"
+      }
     },
     "customizations": {
       "vscode": {
@@ -12,5 +15,7 @@
           "ms-python.python" // Python
         ]
       }
-    }
+    },
+    "postCreateCommand": "echo 'Container initialized for architecture: $TARGETARCH'"
+
 }
