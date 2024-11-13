@@ -18,9 +18,3 @@ For this course we are going to use a variation of Agile which only covers the s
 We are going to use a project board which consists on 3 blocks(Backlog, In progress and Done) to keep in track all our process and to see on which tasks we are currently working on. See image below to see the project board structure
 
 ![Alt text](/documents/images/project_board.png)
-
-## Assesment scheduler
-
-This is the schedule of all students workshop, the duration is of 90 minutes where the students should present their research work and give the audience a few code examples where they also can test the work of the students. see Image below.
-
-![Alt text](/project_management/images/workshop_presentation_schedule.png)

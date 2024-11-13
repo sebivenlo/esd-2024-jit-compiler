@@ -31,3 +31,9 @@ Training workshops are designed to teach new skills or knowledge to attendees. T
 > The grading will be done based on the Presentation/Workshop, research, and material the students provide to the other students and lecturers.
 
 Source: Module Description
+
+## Assessment schedule
+
+This is the schedule of all students workshop, the duration is of 90 minutes where the students should present their research work and give the audience a few code examples where they also can test the work of the students. see Image below.
+
+![Alt text](/project_management/images/workshop_presentation_schedule.png)
