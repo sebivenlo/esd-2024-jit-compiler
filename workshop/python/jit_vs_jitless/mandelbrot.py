@@ -43,7 +43,7 @@ def run_with_timeout(func, timeout, *args, **kwargs):
 if __name__ == "__main__":
     width, height = 800, 800
     max_iterations = 1000
-    timeout = 5  # Timeout in seconds
+    timeout = 50  # Timeout in seconds
 
     start_time = time.time()
     
