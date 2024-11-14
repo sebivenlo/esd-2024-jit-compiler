@@ -32,14 +32,18 @@ RUN apt-get install -y \
     libncursesw5-dev
 
 # Download PyPy tarball
-# RUN curl -sSL https://downloads.python.org/pypy/pypy3.8-v7.3.9-linux64.tar.bz2 -o pypy.tar.bz2
+
+# linux64 = x86_64
+# aarch64 = ARM64
+
+# RUN curl -sSL https://downloads.python.org/pypy/pypy3.10-v7.3.17-linux64.tar.bz2 -o pypy.tar.bz2
 RUN curl -sSL https://downloads.python.org/pypy/pypy3.10-v7.3.17-aarch64.tar.bz2 -o pypy.tar.bz2
 
 # Extract PyPy tarball
 RUN tar -xvf pypy.tar.bz2 && rm pypy.tar.bz2
 
 # Move PyPy to /opt and create a symbolic link
-# RUN mv pypy3.8-v7.3.9-linux64 /opt/pypy
+# RUN mv pypy3.10-v7.3.17-linux64 /opt/pypy
 RUN mv pypy3.10-v7.3.17-aarch64 /opt/pypy
 
 RUN ln -s /opt/pypy/bin/pypy3 /usr/local/bin/pypy3
