@@ -1,10 +1,10 @@
 import time
-import numpy as np
 import threading
 
 # A computationally heavy function for calculating Mandelbrot set
 def mandelbrot_set(width, height, max_iterations):
-    result = np.zeros((width, height))
+    result = [[0] * height for _ in range(width)]
+
     
     for x in range(width):
         for y in range(height):
@@ -15,7 +15,7 @@ def mandelbrot_set(width, height, max_iterations):
                 temp = zx * zx - zy * zy + c_x
                 zy, zx = 2.0 * zx * zy + c_y, temp
                 iteration += 1
-            result[x, y] = iteration
+            result[x][y] = iteration
     return result
 
 # Function to run the mandelbrot_set and time it
