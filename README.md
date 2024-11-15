@@ -22,7 +22,7 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 
    b. [CPython Interpreter](/workshop/python/bytecode_conversion/README.md)
 
-3. [Run Python with CPython (no JIT) and PyPy (JIT)](/workshop/python/jit_vs_jitless/)
+3. [Run Python with CPython (reference implementation) and PyPy (with JIT)](/workshop/python/jit_vs_jitless/)
 4. [ALDA Sorting exercise (JavaScript). Testing different Sorts with (and without) JIT Compiler](/workshop/javascript/README.md)
 5. [LLVM Compiler](/workshop/python/llvm/README.md)
 6. [JavaScript: V8 Tick profiling](/workshop/javascript/tick_profiling_v8.md)
