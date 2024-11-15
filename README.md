@@ -9,7 +9,7 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 ![Dev Containers: Reopen in Container](./project_management/images/reopen_in_container.png)
 
 ## Challenges
-1. Manually compile program and view bytecode (see how compilation work)
+1. Manually compile a script and view bytecode (see how compilation work)
 
    a. [Java bytecode](/workshop/java/README.md)
 
