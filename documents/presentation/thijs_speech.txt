@@ -4,6 +4,15 @@ lets start with the content of this presentation
 show content
 -- -----------------------------------------------------------------
 student knowledge
+
+- what is your favorite language? Why?
+- how to categorize programming languages?
+- what is most important criteria for choosing a programming language?
+- how does each programming language work?
+- which language is the fastest language?
+- for which purpose which language?
+- how about webassembly?
+
 ----------------------------------------------------------------
 JORGE what is jit compiler?
 
@@ -22,6 +31,8 @@ JORGE ALDA excersie
 
 -------------------------------------------------------------------
 Future of jit compiler?
+
+Content: See slide in presentation.
 ------------------------------------------------------------------
 JORGE QUIZZ
 
