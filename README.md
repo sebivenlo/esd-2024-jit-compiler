@@ -21,8 +21,8 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
    b. [See compiler error in C](/workshop/c/README.md)
 3. [Run Python with CPython (no JIT) and PyPy (JIT)](/workshop/python/jit_vs_jitless/)
 4. [ALDA Sorting exercise (JavaScript). Testing different Sorts with (and without) JIT Compiler](/workshop/javascript/README.md)
-5. [Bonus: V8 Tick profiling](/workshop/javascript/tick_profiling_v8.md)
-<!-- 5. run Python 3.13 (with JIT flag) (TODO: install Python 3.13 via downloading binaries because it is not in apt-get yet) -->
+5. [LLVM Compiler](/workshop/python/llvm/README.md)
+6. [V8 Tick profiling](/workshop/javascript/tick_profiling_v8.md)
 
 
 ---
