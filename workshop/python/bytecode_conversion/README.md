@@ -1,4 +1,4 @@
-# Python
+# Python bytecode
 
 ## Exercise
 
@@ -32,6 +32,7 @@ Run the .py file again
 
     python3 simple_calculator.py
 
-Compare the Python bytecode with the Java bytecode!
--> Name 3 differences.
-
+Questions:
+* Is the Python bytecode statically or dynamically typed?
+* Is the Python bytecode (already) optimised by a JIT?
+* Compare the Python bytecode with the Java bytecode! (stdout both bytecode output to a > .txt) -> Name 2 differences.

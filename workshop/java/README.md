@@ -1,4 +1,4 @@
-# Java
+# Java bytecode
 
 ## Exercise
 
@@ -14,5 +14,6 @@ This will create a new file called SimpleCalculator.class
 
 See how the Bytecode works!
 
-
-
+Questions:
+* Is the Java bytecode already optimised by JIT?
+* Is the bytecode statically or dynamically typed?
