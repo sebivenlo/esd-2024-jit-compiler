@@ -9,20 +9,23 @@ Click pop-up in VS Code: Folder contains a Dev Container configuration file. **R
 ![Dev Containers: Reopen in Container](./project_management/images/reopen_in_container.png)
 
 ## Challenges
-1. Manually compile a script and view bytecode (see how compilation work)
+1. Interpreter vs Compiler
 
-   a. [Java bytecode](/workshop/java/README.md)
+   a. [Compiler error in C](/workshop/c/README.md)
 
-   b. [Python bytecode](/workshop/python/bytecode_conversion/README.md)
-2. Runtime vs compiler error
+   b. [Runtime error in Python: Division by zero](/workshop/python/runtime_error/README.md)
 
-   a. [See runtime error in Python: Division by zero](/workshop/python/runtime_error/README.md)
 
-   b. [See compiler error in C](/workshop/c/README.md)
+2. Generate bytecode
+
+   a. [Java Compiler (javac)](/workshop/java/README.md)
+
+   b. [CPython Interpreter](/workshop/python/bytecode_conversion/README.md)
+
 3. [Run Python with CPython (no JIT) and PyPy (JIT)](/workshop/python/jit_vs_jitless/)
 4. [ALDA Sorting exercise (JavaScript). Testing different Sorts with (and without) JIT Compiler](/workshop/javascript/README.md)
 5. [LLVM Compiler](/workshop/python/llvm/README.md)
-6. [V8 Tick profiling](/workshop/javascript/tick_profiling_v8.md)
+6. [JavaScript: V8 Tick profiling](/workshop/javascript/tick_profiling_v8.md)
 
 
 ---
