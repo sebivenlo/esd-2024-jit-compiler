@@ -1,5 +1,16 @@
 # Explanation of Fibonacci Implementations and Performance with JIT
 
+## fibonacci explanation
+The Fibonacci process is a sequence where each number is the sum of the two preceding ones, typically starting with 0 and 1. This sequence is defined as:
+
+F(0)=0
+F(1)=1
+F(n)=F(n−1)+F(n−2) for 𝑛 ≥ 2 n≥2
+
+So, the series starts as: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
+
+The Fibonacci sequence has applications in mathematics, computer science, and nature, such as in modeling growth patterns, the arrangement of leaves, and the branching of trees.
+
 ## Inefficient Iterative Fibonacci
 
 ### Code Overview:

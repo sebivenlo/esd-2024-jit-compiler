@@ -1,5 +1,8 @@
 function fibonacci(n) {
-    return (n < 2) ? 1 : fibonacci(n - 2) + fibonacci(n - 1);
+    
+    const result = (n < 2) ? 1 : fibonacci(n - 2) + fibonacci(n - 1);
+    // console.log((n < 2) ? "" : result);
+    return result;
 }
 
 let n = 32;
