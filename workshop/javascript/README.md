@@ -38,6 +38,13 @@ This will prevent that the code without jit doesn't take more that a minute to f
 
 ## Exercise 2: Fibonacci Sequence
 
+The Fibonacci process is a sequence where each number is the sum of the two preceding ones, typically starting with 0 and 1. This sequence is defined as:
+
+F(0)=0 F(1)=1 F(n)=F(n−1)+F(n−2) for 𝑛 ≥ 2 n≥2
+
+
+So, the series starts as: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
+
 ### Steps to Run the Fibonacci Exercise
 
 1. **Run the iterative Fibonacci function with JIT**  
