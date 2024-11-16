@@ -6,7 +6,7 @@ the mail goal of this workshop is to show and to teach what jit compiler is and 
 
 there are two rules for this workshop,
 1- if there is questions just raise your hand and we will stop to anwser your questions
-2- when there is a votation, e.g. for pause. we are going to vote and the most of votes will win
+2- when there is a votation, e.g. for break. we are going to vote and the most of votes will win
 
 lets start with the content of this presentation
 -- -----------------------------------------------------------------
