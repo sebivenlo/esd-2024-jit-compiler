@@ -18,6 +18,10 @@ The [default JS sort function](https://developer.mozilla.org/en-US/docs/Web/Java
   - Insertion Sort builds a sorted array one element at a time. It takes each element from the input and finds the appropriate position within the sorted part of the array.
   - Although it's efficient for small datasets or partially sorted arrays, it also has a quadratic time complexity, making it less efficient for large datasets.
 
+
+Insertion Sort often requires fewer swaps compared to Selection Sort because it shifts elements rather than swapping them. When inserting an element into its correct position, it only needs to move the elements to the right by one position at a time, which is usually less costly than multiple swaps.
+
+
 ### 3. Quick Sort
 - **Complexity**: O(N log N) on average, O(N²) in the worst case
 - **Description**: 
