@@ -47,7 +47,7 @@ So, the series starts as: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
 
 ### Steps to Run the Fibonacci Exercise
 
-1. **Run the iterative Fibonacci function with JIT**  
+<!-- 1. **Run the iterative Fibonacci function with JIT**  
    Execute the following command to run the iterative version with JIT enabled:
    ```bash
    node workshop/javascript/FIBONACCI/fibonacci-iterative.js
@@ -57,19 +57,19 @@ So, the series starts as: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
    Execute the following command to run the iterative version without JIT:
    ```bash
    NODE_OPTIONS="--jitless" node workshop/javascript/FIBONACCI/fibonacci-iterative.js
+ -->
 
-
-3. **Run the recursive Fibonacci function with JIT**  
+1. **Run the recursive Fibonacci function with JIT**  
    Execute the following command to run the recursive Fibonacci function with JIT:
    ```bash
    node workshop/javascript/FIBONACCI/fibonacci.js
 
-4. **Run the recursive Fibonacci function without JIT**  
+2. **Run the recursive Fibonacci function without JIT**  
    Execute the following command to run the recursive version without JIT:
    ```bash
    NODE_OPTIONS="--jitless" node workshop/javascript/FIBONACCI/fibonacci.js
 
-5. **Observe the performance differences**
+3. **Observe the performance differences**
 Compare the execution times of the iterative and recursive functions with and without JIT enabled. Note any significant differences in performance.
 
 

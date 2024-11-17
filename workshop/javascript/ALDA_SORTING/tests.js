@@ -9,7 +9,8 @@ function generateRandomArray(size) {
 }
 
 
-const size = 100000; // Size of the array
+// const size = 100000; // Size of the array
+const size = 50000; // Size of the array
 const originalArray = generateRandomArray(size);
 
 // Test Selection Sort

@@ -5,7 +5,7 @@ function fibonacci(n) {
     return result;
 }
 
-let n = 32;
+let n = 30;
 let start = Date.now(); // Get current time in milliseconds
 let fibResult = fibonacci(n);
 let stop = Date.now(); // Get current time again
