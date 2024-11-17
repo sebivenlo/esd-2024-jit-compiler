@@ -1,6 +1,13 @@
 ## Tick profiling V8
 
-JIT is all about performance. To learn more about why a script performs good or bad, you have to analyse. We do this with V8 Tick profiling.
+JIT is all about performance. Profiling a Node.js application involves measuring its performance by analyzing the CPU, memory, and other runtime metrics while the application is running.
+
+```text
+NODE man page
+--prof            Generate V8 profiler output.
+--prof-process    process V8 profiler output generated using --prof
+```
+
 
 ### FIBONACCI
     node --prof fibonacci.js
