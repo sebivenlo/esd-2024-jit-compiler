@@ -47,3 +47,5 @@ The `fibonacci(n)` function uses a **recursive** approach to calculate the Fibon
 The **inefficient iterative Fibonacci** implementation demonstrates a large performance difference when JIT is enabled or disabled, primarily due to the artificial slowdown added. The **naive recursive Fibonacci** implementation, due to its inherent inefficiency, shows slower performance even with JIT, but disabling JIT further exacerbates this slowness. 
 
 Testing these two implementations highlights the importance of JIT in optimizing JavaScript code execution, especially for performance-critical or computation-heavy tasks.
+
+Back to [challenges overview](/README.md)

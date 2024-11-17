@@ -48,6 +48,8 @@ Run
 
 Analyse what happened, and how IR works.
 
+Back to [challenges overview](/README.md)
+
 ### Task 2: Build a Simple JIT Compiler with LLVM
 
 #### Steps:
@@ -82,3 +84,4 @@ Analyse what happened, and how IR works.
 3. [LLVM IR Language Reference](https://llvm.org/docs/LangRef.html)
 4. [JIT Compilation Overview](https://en.wikipedia.org/wiki/Just-in-time_compilation)
 
+Back to [challenges overview](/README.md)

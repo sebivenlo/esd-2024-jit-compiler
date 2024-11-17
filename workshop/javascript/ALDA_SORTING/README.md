@@ -42,3 +42,5 @@ Just-In-Time (JIT) compilation optimizes the execution of code by compiling it a
 While Selection Sort and Insertion Sort have inherent limitations due to their O(N²) complexity, leveraging a JIT compiler can help improve their execution speed significantly in practice. On the other hand, Quick Sort benefits from its O(N log N) complexity and can also gain from the optimizations provided by JIT compilation.
 
 In summary, understanding the complexities and performance implications of these sorting algorithms is crucial for selecting the right algorithm for a given problem, especially when considering the benefits that JIT compilation can provide.
+
+Back to [challenges overview](/README.md)

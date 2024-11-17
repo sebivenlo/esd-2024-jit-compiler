@@ -48,3 +48,5 @@ Questions:
 * Is the Python bytecode statically or dynamically typed?
 * Is the Python bytecode (already) optimised by a JIT?
 * Compare the Python bytecode with the Java bytecode! (stdout both bytecode output to a > .txt) -> Name 2 differences.
+
+Back to [challenges overview](/README.md)
