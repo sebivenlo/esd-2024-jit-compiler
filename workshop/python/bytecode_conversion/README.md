@@ -45,8 +45,11 @@ Run the .py file again
 fyi: > is called 'output redirection'
 
 Questions:
-* Is the Python bytecode statically or dynamically typed?
-* Is the Python bytecode (already) optimised by a JIT?
-* Compare the Python bytecode with the Java bytecode! (stdout both bytecode output to a > .txt) -> Name 2 differences.
+1. Is the Python bytecode statically or dynamically typed?
+2. Is the Python bytecode (already) optimised by a JIT?
+
+### Step 6: Compare both outputs
+Compare the Python bytecode with the Java bytecode!
+Question: Name 2 differences.
 
 Back to [challenges overview](/README.md)
