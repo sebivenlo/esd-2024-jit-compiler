@@ -1,31 +1,30 @@
-## Exercise timeout
+## Exercise Jit vs Jitless Python - Mandelbrot
 The Mandelbrot set is a set of complex numbers that produces a fascinating and infinitely complex fractal pattern when plotted on the complex plane. It is defined by iterating the equation:
-
-Fractal Nature: The Mandelbrot set is famous for its intricate boundary that reveals self-similar structures at various scales, meaning that no matter how much you zoom in, you will continue to see complex patterns.
-
-Visualization: Points in the Mandelbrot set are typically colored black, while points outside the set are colored based on how quickly they escape to infinity when the iteration is applied, resulting in a colorful and mesmerizing image.
-
 Mathematical Beauty: The set exemplifies how simple mathematical rules can lead to complex and beautiful results, making it a popular subject in mathematics, art, and computer graphics.
 
-### Run
+![Mandelbrot](/workshop/_images/mandelbrot_sequence_new.gif)
+
+
+### Benchmarking
 
 Navigate to the correct folder
 
     cd workspaces/esd-2024-jit-compiler/workshop/python/jit_vs_jitless
 
 
-##### Without JIT 
+#### Without JIT (CPython = reference implementation)
 Run the command
 
     python3 mandelbrot.py
 
-##### With JIT 
+> **_NOTE:_**  Our container has CPython 3.12. In 3.13 (not yet available in apt-get) is JIT introduced.
+
+#### With JIT ([PyPy](https://doc.pypy.org/en/latest/))
 Run the command
 
     pypy3 mandelbrot.py
 
 
+Question: What is the time difference?
 
-### references:
 
-documentation of pypy: https://doc.pypy.org/en/latest/
