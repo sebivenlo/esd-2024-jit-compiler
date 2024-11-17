@@ -2,7 +2,7 @@
 
 Navigate to the correct folder
 
-    cd /workshop/java/
+    cd workspaces/esd-2024-jit-compiler/workshop/java/
 
 ### Compile to Bytecode
 Run the command

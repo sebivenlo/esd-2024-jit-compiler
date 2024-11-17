@@ -9,11 +9,18 @@ Mathematical Beauty: The set exemplifies how simple mathematical rules can lead 
 
 ### Run
 
+Navigate to the correct folder
+
+    cd workspaces/esd-2024-jit-compiler/workshop/python/jit_vs_jitless
+
+
 ##### Without JIT 
+Run the command
 
     python3 mandelbrot.py
 
 ##### With JIT 
+Run the command
 
     pypy3 mandelbrot.py
 
