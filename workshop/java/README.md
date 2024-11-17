@@ -14,9 +14,9 @@ This will create a new file called SimpleCalculator.class
 ### Analyse Bytecode
 For this we use javap - "The Java Class File Disassembler" (p stands for print)
 
-    javap -c SimpleCalculator
+    javap -c SimpleCalculator > output_java.txt
 
-See how the Bytecode works!
+See how the bytecode works!
 
 Questions:
 * Is the Java bytecode already optimised by JIT?
