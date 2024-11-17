@@ -2,9 +2,7 @@ Open in browser for readability: https://github.com/sebivenlo/esd-2024-jit-compi
 
 # JIT-Compiler Workshop
 ## Docker
-The Docker container includes all the necessary programming languages and dependencies.
-
-Click pop-up in VS Code: Folder contains a Dev Container configuration file. **Reopen in container.**. See image below. Missed it? Open Command Palette > 'Dev Containers: Reopen in Container'.
+Click 'Reopen in container' in following VS Code pop-up. Did you miss it? Open Command Palette > 'Dev Containers: Reopen in Container'.
 
 ![Dev Containers: Reopen in Container](./project_management/images/reopen_in_container.png)
 
