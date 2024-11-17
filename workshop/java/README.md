@@ -1,14 +1,18 @@
 # Java bytecode
 
-## Exercise
+Navigate to the correct folder
+
+    cd /workshop/java/
 
 ### Compile to Bytecode
+Run the command
 
     javac SimpleCalculator.java
 
 This will create a new file called SimpleCalculator.class
 
 ### Analyse Bytecode
+For this we use javap - "The Java Class File Disassembler" (p stands for print)
 
     javap -c SimpleCalculator
 
