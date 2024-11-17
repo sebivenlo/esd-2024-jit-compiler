@@ -18,7 +18,7 @@ binding.initialize()
 binding.initialize_native_target()
 binding.initialize_native_asmprinter()
 
-# Define the LLVM IR for both cases
+# Define the LLVM IR (Intermediate Representation) for both cases
 non_optimized_ir = """
 ; Non-optimized summation loop
 define i32 @main() {
