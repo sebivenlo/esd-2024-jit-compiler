@@ -40,7 +40,7 @@ This assignment is designed to help you:
 ### Task 1: Build a Simple JIT Compiler with LLVM
 Navigate to the correct folder
 
-    cd workspaces/esd-2024-jit-compiler/workshop/python/llvm
+    cd /workspaces/esd-2024-jit-compiler/workshop/python/llvm
 
 Run
 

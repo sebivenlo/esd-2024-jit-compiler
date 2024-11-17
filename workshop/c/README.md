@@ -2,7 +2,7 @@
 
 Navigate to the correct folder
 
-    cd workspaces/esd-2024-jit-compiler/workshop/c
+    cd /workspaces/esd-2024-jit-compiler/workshop/c
 
 Run the command
 

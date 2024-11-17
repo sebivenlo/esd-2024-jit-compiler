@@ -2,7 +2,7 @@
 
 Navigate to the correct folder
 
-    cd workspaces/esd-2024-jit-compiler/workshop/python/runtime_error
+    cd /workspaces/esd-2024-jit-compiler/workshop/python/runtime_error
 
 Run the command
 

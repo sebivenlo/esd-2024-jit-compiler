@@ -4,7 +4,7 @@
 
 Navigate to the correct folder
 
-    cd workspaces/esd-2024-jit-compiler/workshop/python/bytecode_conversion
+    cd /workspaces/esd-2024-jit-compiler/workshop/python/bytecode_conversion
 
 ### Step 1: Run .py file
 

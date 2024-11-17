@@ -9,7 +9,7 @@ Mathematical Beauty: The set exemplifies how simple mathematical rules can lead 
 
 Navigate to the correct folder
 
-    cd workspaces/esd-2024-jit-compiler/workshop/python/jit_vs_jitless
+    cd /workspaces/esd-2024-jit-compiler/workshop/python/jit_vs_jitless
 
 
 #### Without JIT (CPython = reference implementation)
